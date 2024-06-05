@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V97X3VB3RH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-V97X3VB3RH');
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Maralheios</title>
+    <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
+
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
+    <link rel="stylesheet" href="../vendor/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../vendor/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../vendor/css/swiper.min.css">
+    <link rel="stylesheet" href="../vendor/css/cubeportfolio.min.css">
+    <link rel="stylesheet" href="../vendor/css/wow.css">
+    <link rel="stylesheet" href="../vendor/css/LineIcons.min.css">
+    <link rel="stylesheet" href="../shop/css/nouislider.min.css">
+    <link rel="stylesheet" href="../shop/css/range-slider.css">
+    <!-- Mega Menu  -->
+    <link rel="stylesheet" href="../book-shop/css/megamenu.css">
+    <!-- StyleSheet  -->
+    <link rel="stylesheet" href="../book-shop/css/style.css">
+
+    <style>
+    /*NEW*/
+        /* Reset some default styles */
+        h1,
+        h2,
+        h3,
+        p {
+            margin: 0;
+            padding: 0;
+            color: black;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link.show{
+            color:#96811D;
+        }
+
+        /* Style the album container */
+        .album {
+            background-color: #f8f9fa;
+        }
+
+         .col-md-3{
+        width: 235px;
+    }
+
+        /* Center the content in the container */
+        .container {
+            max-width: 1500px;
+            margin: 50px auto;
+        }
+        @media (max-width: 767px) {
+            margin: 50px 10%;
+        }
+        
+        @media (max-width: 767px) {
+           .container, .container_revista {
+            margin: 50px auto; 
+            max-width: 100%; 
+
+        } 
+        }
+        
+            .container_revista {
+                margin: 50px 20%;
+                }
+                @media (max-width: 767px) {
+                .container_revista {
+                margin: 50px 20%;
+                }
+                }
+                
+                
+    
+
+        /* Style the card layout */
+        .row-cols-1,
+        .row-cols-sm-2,
+        .row-cols-md-3 {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        /* Add space between cards */
+        .col {
+            padding: 15px;
+        }
+
+        /* Style the cards */
+        .card {
+            width: 100%; 
+            max-width: 300px; 
+            margin: 15px auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            word-wrap: break-word;
+            background-color: #fff;
+            background-clip: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.125);
+            border-radius: 0.25rem;
+        }
+
+        /* Style the card body */
+        .card-body {
+            flex: 1 1 auto;
+            padding: 1.25rem;
+        }
+
+        /* Style the card text */
+        .card-text {
+            margin-bottom: 1rem;
+        }
+
+        /* Style the buttons */
+        .btn-group {
+            margin-right: 5px;
+        }
+
+        /* Style the timestamp */
+        .text-muted {
+            font-size: 0.85em;
+            color: #96811D; /* Timestamp color */
+        }
+
+        /* Add shadow to cards on hover */
+        .card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+    body{
+      font-family: anton;
+      margin: 0;
+    }
+    footer {
+      background-color: #96811D; /* Red wine color */
+      padding: 30px 0;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .footer-section {
+      flex: 0 0 30%;
+      text-align: center;
+    }
+
+    h4 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: #fff;
+    }
+    #apresentacao p{
+      color: black;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color:#F9B233;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #E87600; /* Dark orange color */
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .footer-section {
+        flex: 0 0 100%;
+      }
+    }
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      height: 100px;
+      width: 100px;
+      background-size: 100%, 100%;
+      background-image: none;
+    }
+
+    /* Estilo para ajustar o tamanho das imagens e centralizá-las */
+    .carousel-inner {
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    .carousel-item {
+      text-align: center;
+    }
+
+    .carousel-item img {
+      max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+      margin: 0 auto; /* Centraliza horizontalmente */
+    }
+    .carousel-indicators {
+      position: absolute;
+      right: 0;
+      bottom: -40px;
+      left: 0;
+      z-index: 2;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin-right: 15%;
+      background-color:#96811D;
+    }
+    /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
+@media (max-width: 767px) {
+  .carousel-indicators {
+    bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+  }
+}
+@media (max-width: 767px) {
+    #imgBanner1{
+        height: 250px;
+        width:100%;
+    }
+    #imgBanner2{
+        height: 250px;
+        width:100%;
+    }
+    #imgBanner3{
+        height: 250px;
+        width:100%;
+    }
+    #imgBanner4{
+        height: 250px;
+        width:100%;
+    }
+    #imgBanner5{
+        height: 250px;
+        width:100%;
+    }
+#container-car{
+    height: 300px;
+}
+}
+
+@media (max-width: 767px) {
+.card{
+    width:265px;
+    
+}
+}
+  </style>
+</head>
+<body style="margin-right:auto">
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid" style="font-size: 25px;">
+        <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="50" height="40"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="poliamar.html">Poliamar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="A_Remetente.html">À Remetente</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="multiplas.html">Múltiplas</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!---div class="container">
+    <div class="starter-template">
+        <div class="row">
+            <div class="col-md-4 col-lg-4">
+                <img class="featurette-image img-responsive center-block" style="width: 300px;" src="img/03- ÍCONE DE PERFIL.png"  alt="foto perfil desfrutada">
+            </div>
+            <div class="col-md-4 col-lg-8">
+                <p><strong style="font-size: 27px;">Uma Editora</strong></p>
+                <p class="lead" align="justify">
+                    <strong>A Maralheios</strong> é uma editora
+                </p>
+            </div>
+        </div>
+    </div>
+</div!--->
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12 col-md-8" id="container-car">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner" style="padding-top: 100px;">
+                    <div class="carousel-item active">
+                        <a href="#homeedicao1"  data-fancybox="lastest_product"  data-title="Shirt Name">
+                            <img src="img/banner01_maralheios.jpg" id="imgBanner1" class="card-img-top" alt="Maralheios">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="poliamar.html">
+                            <img src="img/banner02_maralheios.jpg" id="imgBanner2" class="card-img-top" alt="Poliamar">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="A_Remetente.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+                            <img src="img/banner03_maralheios.jpg" id="imgBanner3" class="card-img-top" alt="À Remetente - Amazon">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="https://adesfrutada.com/" target=_blank  >
+                            <img src="img/banner04_maralheios.jpg" id="imgBanner4" class="card-img-top" alt="Revista A Desfrutada">
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="multiplas.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+                            <img src="img/Banner_PromoColeçãoMúltiplas.png" class="card-img-top" id="imgBanner5" alt="Coleções Múltiplas">
+                        </a>
+                    </div>
+                    <!--div class="carousel-item">
+                        <a href="#" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
+                            <img src="img/banner05_maralheios.jpg" class="card-img-top" alt="Publique Seu Livro">
+                        </a>
+                    </div!-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- START THE FEATURETTES -->
+
+<hr class="featurette-divider" style="margin:5rem">
+
+<!-- START PORTOLIO SECTION -->
+
+    <div class="album py-5 bg-light">
+        <div class="container_revista">
+            <h2 class="text-center mb-4" style="color: #96811D;">Conheça os Livros da editora Maralhieos</h2>
+            <hr style="border-top: 2px solid #2E4A55;">
+            <div class="row">
+            <div class="col-md-3 p-3">
+                <div class="card shadow-sm">
+                    <small class="" style="font-size: 14px;">Categoria: Poesia</small>
+                    <img src="img/01-CAPA-LIVRO POLIAMAR.jpg">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <a href="poliamar.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
+                                <a href="https://www.amazon.com.br/dp/B09NWCVFVZ" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 p-3">
+                <div class="card shadow-sm">
+                    <small class="" style="font-size: 14px;">Gênero: Poesia</small>
+                    <img src="img/04-CAPA E-BOOK0 À REMETENTE.jpg">
+                    <div class="card-body text-center">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="">
+                                <a href="A_Remetente.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
+                                <a href="https://www.amazon.com.br/Remetente-Poesias-contam-hist%C3%B3ria-l%C3%A1grimas-ebook/dp/B0CSHKBYPV/ref=mp_s_a_1_5?crid=XXTR32Q4BYXU&keywords=%C3%A0+remetente&qid=1706443025&sprefix=%C3%A0+remetente%2Caps%2C322&sr=8-5" target="_blank"><button type="button" class="btn btn-sm btn-outline-secondary">Comprar</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <h2 class="text-center mt-5 mb-4" style="color: #96811D;">Conheça A Desfrutada e suas Edições</h2>
+            <hr style="border-top: 2px solid #2E4A55;">
+            <div class="row">
+                <div class="col-md-3 p-3">
+                    <div class="card shadow-sm">
+                        <small class="" style="font-size: 14px;">Gênero: Literatura e Artes visuais</small>
+                        <img src="img/02- CAPA REVISTA A DESFRUTADA.jpg">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <a href="https://adesfrutada.com/ADesfrutada/edicao0/edicao0.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
+                                    <a href="https://www.amazon.com.br/dp/B0CYMCW6F9"  class="btn btn-sm btn-outline-primary mt-3">Comprar na Amazon </a>
+                                    <a href="https://play.google.com/store/books/details?id=EFz8EAAAQBAJ"  class="btn btn-sm btn-outline-success mt-3">Compra no Google </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card shadow-sm">
+                        <small class="" style="font-size: 14px;">Gênero: Literatura e Artes visuais</small>
+                        <img src="img/03- CAPA REVISTA A DESFRUTADA EDIÇÃO 01.png">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <a href="https://adesfrutada.com/ADesfrutada/edicao1/edicao1.html"><button type="button" class="btn btn-sm btn-outline-secondary">Ler+</button></a>
+                                    <a href="https://www.amazon.com.br/dp/B0CYMCJW95"  class="btn btn-sm btn-outline-primary mt-3">Comprar na Amazon </a>
+                                    <a href="https://play.google.com/store/books/details?id=qlv8EAAAQBAJ"  class="btn btn-sm btn-outline-success mt-3">Compra no Google </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card shadow-sm">
+                        <small class="" style="font-size: 14px;">Gênero: Literatura e Artes visuais</small>
+                        <img src="img/Adesfrutadan2_capa.png">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <a href="https://adesfrutada.com/ADesfrutada/edicao2/edicao2" class="btn btn-sm btn-outline-secondary">Ler+</a>
+                                    <a href="https://www.amazon.com.br/dp/B0CW1HQMM3"  class="btn btn-sm btn-outline-primary mt-3">Comprar na Amazon </a>
+                                    <a href="https://play.google.com/store/books/details?id=mlr8EAAAQBAJ "  class="btn btn-sm btn-outline-success mt-3">Compra no Google </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 p-3">
+                    <div class="card shadow-sm">
+                        <small class="" style="font-size: 14px;">Gênero: Literatura e Artes visuais</small>
+                        <img src="img/Adesfrutada_3Ed.jpeg">
+                        <div class="card-body text-center">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="">
+                                    <a href="https://www.amazon.com.br/gp/product/B0CXTN5JNZ?ref_=dbs_p_mng_rwt_ser_shvlr&storeType=ebooks"  class="btn btn-sm btn-outline-primary mt-3">Comprar as últimas 3 Edições</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- END PORTOLIO SECTION -->
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+</body>
+</html>

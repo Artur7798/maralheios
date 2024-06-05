@@ -1,0 +1,301 @@
+body {
+    padding-top: 0px;
+}
+.starter-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carousel {
+    height: 500px;
+    margin-bottom: 60px;
+    width: 100%;
+}
+.carousel-caption {
+    z-index: 10; /* Since positioning the image, we need to help out the caption */
+}
+footer {
+    background-color: #87000D; /* Red wine color */
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+p {
+    color: #fff;
+    margin-bottom: 20px;
+}
+#apresentacao p{
+    color: black;
+    margin-bottom: 20px;
+}
+
+a {
+    color:#F9B233;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E87600; /* Dark orange color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 0 0 100%;
+    }
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+    height: 500px;
+    background-color: #777;
+}
+.carousel-inner > .item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 500px;
+    width: 900px;
+}
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: 400;
+}
+.marketing .col-lg-4 p {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.featurette-divider {
+    margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 4px; /* The navbar becomes detached from the top, so we round the corners */
+    }
+
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+
+    .featurette-heading {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
+    /*lastest_arrivals*/
+
+    .lastest_arrivals{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .lastest_arrivals h1{
+        font-size: 26px;
+        color:#000000;
+        font-weight: 400;
+    }
+
+    .lastest_arrival_items .lastest-addto-cart{
+        position: absolute;
+        z-index: 100;
+        background-color:#62ab00;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        top: 35%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        -webkit-transition: .8s ease;
+        -o-transition: .8s ease;
+        transition: .8s ease;
+    }
+
+    .lastest_arrival_items .lastest-addto-cart i{
+        position: absolute;
+        color: #FFFFFF;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+    }
+
+    .lastest_arrivals .lastest_arrival_items.item:hover  .lastest-addto-cart{
+        opacity: 1;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card{
+        border: none;
+        cursor: pointer;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card .product-type{
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        color: white;
+        background-color: #f7941d;
+        top: 10px;
+        left: 5px;
+        border-radius: 50px;
+        font-size: 11px;
+        font-weight: bold;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card .image-holder{
+        overflow: hidden;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card .image-holder img{
+        -webkit-transition: 1s ease;
+        -o-transition: 1s ease;
+        transition: 1s ease;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card:hover .image-holder img{
+        -ms-transform: scale(1.1); /* IE 9 */
+        -webkit-transform: scale(1.1); /* Safari 3-8 */
+        transform: scale(1.1);
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card .card-body{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card .card-body h5{
+        color: black;
+        font-size: 15px;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        -webkit-transition: .8s ease;
+        -o-transition: .8s ease;
+        transition: .8s ease;
+        margin-bottom: 5px;
+    }
+    .lastest_arrivals .lastest_arrival_items .card .card-body p{
+        color:#000000;
+        font-size: 14px;
+        display: inline-block;
+        font-family: 'Poppins', sans-serif;
+        -webkit-transition: .8s ease;
+        -o-transition: .8s ease;
+        transition: .8s ease;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card:hover .card-body h5 {
+        color: #f7941d !important;
+    }
+
+    .lastest_arrivals .lastest_arrival_items .card:hover .card-body p{
+        color:#000000;
+    }
+
+    .lastest_arrivals .owl-dots{
+        position: absolute;
+        right: 0px;
+        top: -40px;
+    }
+
+    .lastest_arrivals  .lastest_featured_products  .owl-nav button.owl-next, .lastest_arrivals  .lastest_featured_products  .owl-nav button.owl-prev, .lastest_arrivals  .lastest_featured_products  button.owl-dot {
+        height: 12px;
+        width: 12px;
+        border-radius: 50px;
+        background-color: #d3d3d3;
+        margin-left: 8px;
+    }
+
+    .lastest_arrivals .lastest_featured_products .owl-dots .owl-dot.active{
+        background-color: #f7941d;
+    }
+}
+
