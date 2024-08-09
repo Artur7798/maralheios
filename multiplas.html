@@ -94,6 +94,31 @@
         max-width: 100%;
     }
 }
+.redirect-overlay {
+    position: static;
+    width: 800px;
+    height: 100%;
+    z-index: 1;
+    text-align: center;
+}
+
+.btn {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/* Adicionar responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    iframe {
+        height: 500px; /* Ajuste conforme necessário para telas menores */
+    }
+
+    .redirect-overlay {
+        width: 100%;
+        height: 100%;
+        margin-top: 20px; /* Ajustar espaçamento superior em telas menores */
+    }
+}
 
 </style>
 
@@ -197,7 +222,7 @@
                                 <div class="qty col-12 col-lg-3 d-lg-flex  align-items-lg-center d-inline-block">
                                 </div>
                                 <div class="col-12 col-lg-9">
-                                    <a href="https://pag.ae/7-jMp5yhQ" target="_blank">
+                                    <a href="https://maralheios01.sualojaonline.app/" target="_blank">
                                     <button class="btn green-color-yellow-gradient-btn">Comprar</button>
                                     </a>
                                 </div>
@@ -224,7 +249,7 @@
                                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">+ Descrição</a>
                                     </li>
                                     <li class="col-4 nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Conheça a Coleção</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Loja</a>
                                     </li>
                                 </ul>
                                 <div class="col-12 tab-content" id="myTabContent">
@@ -239,8 +264,14 @@
                                     </div>
                                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row">
-                                            <div class="col-12">
-                                                
+                                            <div class="col-12 col-md-8 mx-auto">
+                                                <iframe src="https://maralheios01.sualojaonline.app/" href="https://maralheios01.sualojaonline.app/" width="100%" height="800px" frameborder="0"></iframe>
+                                                <div class="redirect-overlay mt-5" onclick="window.location.href='https://maralheios01.sualojaonline.app/'">
+                                                    <button class="btn green-color-yellow-gradient-btn" target="_blank">Ir para o Site de Compras</button>
+                                                </div>
+                                            </div>
+                                            <!---div class="col-12">
+
                                                 <div class="row">
                                                     <div class="col-md-3 p-3">
                                                         <div class="card shadow-sm">
@@ -265,9 +296,9 @@
                                                                             </div>
                                                                         </div>
                                                                         <br/>
-                                                                        <!---a href="https://pag.ae/7-pZEjeHN" target="_blank" >
+                                                                        <a href="https://pag.ae/7-pZEjeHN" target="_blank" >
                                                                             <button class="btn purple-color-blue-gradient-btn">Comprar Eutimologia</button>
-                                                                        </a!--->
+                                                                        </a>
 
                                                                     </div>
                                                                 </div>
@@ -297,9 +328,9 @@
                                                                             </div>
                                                                         </div>
                                                                         <br/>
-                                                                        <!---a href="https://pag.ae/7-pZFqu2L" target="_blank" >
+                                                                        <a href="https://pag.ae/7-pZFqu2L" target="_blank" >
                                                                             <button class="btn purple-color-blue-gradient-btn">Comprar Em nós</button>
-                                                                        </a!--->
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -328,9 +359,9 @@
                                                                             </div>
                                                                         </div>
                                                                         <br/>
-                                                                        <!---a href="https://pag.ae/7-pZGZqxN" target="_blank" >
+                                                                        <a href="https://pag.ae/7-pZGZqxN" target="_blank" >
                                                                             <button class="btn purple-color-blue-gradient-btn">Comprar Vem comigo que no caminho te explico</button>
-                                                                        </a!--->
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -360,16 +391,16 @@
                                                                             </div>
                                                                         </div>
                                                                         <br/>
-                                                                        <!---a href="https://pag.ae/7-pZJB1YL" target="_blank" >
+                                                                        <a href="https://pag.ae/7-pZJB1YL" target="_blank" >
                                                                             <button class="btn purple-color-blue-gradient-btn">Um livro de ausências</button>
-                                                                        </a!--->
+                                                                        </a>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <!--table class="table table-striped">
+                                                <table class="table table-striped">
                                                     <thead>
                                                     <tr>
                                                         <th scope="col">Etimologia</th>
@@ -436,9 +467,10 @@
                                                     </tr>
                                                     </tbody>
 
-                                                </table!-->
-                                            </div>
+                                                </table>
+                                            </div!--->
                                         </div>
+
                                     </div>
                                 </div>
 
