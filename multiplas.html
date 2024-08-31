@@ -12,497 +12,511 @@
     <meta name="keywords" content="maralheios, poesia, literatura, feminismo, amor, poliamar, amanda, livro, ebook, amazon, compre, multiplas">
     <!-- Page Title -->
     <title>Múltiplas</title>
-    <link rel="icon" href="img/03-%20ÍCONE%20DE%20PERFIL.png" type="image/x-icon">
-    <!-- Bundle -->
-    <link rel="stylesheet" href="vendor/css/bundle.min.css">
-    <!-- Plugin Css -->
-    <link rel="stylesheet" href="vendor/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="vendor/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="vendor/css/swiper.min.css">
-    <link rel="stylesheet" href="vendor/css/cubeportfolio.min.css">
-    <link rel="stylesheet" href="vendor/css/wow.css">
-    <link rel="stylesheet" href="vendor/css/LineIcons.min.css">
-    <link rel="stylesheet" href="shop/css/nouislider.min.css">
-    <link rel="stylesheet" href="shop/css/range-slider.css">
-    <!-- Mega Menu  -->
-    <link rel="stylesheet" href="book-shop/css/megamenu.css">
-    <!-- StyleSheet  -->
-    <link rel="stylesheet" href="book-shop/css/style.css">
-    <!-- Custom Css  -->
-    <link rel="stylesheet" href="book-shop/css/custom.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-k6RqeTVOsA8vVe8z2JEnTq94XFM8lMT6hOqDjIaD4PMZcuCUTv3Ac5gDMu1Nrgch" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-<style>
-/* Consulta de mídia para ocultar a navegação em computadores */
-    @media screen and (min-width: 768px) {
-      nav[aria-label="breadcrumb"] {
-        display: none;
-      }
-    }
-
-    /* Consulta de mídia para exibir a navegação em dispositivos móveis */
-    @media screen and (max-width: 767px) {
-      nav[aria-label="breadcrumb"] {
-        display: block;
-      }
-    }
-    @media (max-width: 767px) {
-        .row product-list product-detail{
-            width:1200px;
+    <style>
+        #tabsmultiplas .nav-item .nav-link.active{
+            background-color:  #1b1e21;
+            color: #FFFFFF !important;
         }
-        #imgMaria{
-        width:900px;
-        height: auto; /* Altura automática */
+        .nav-item .nav-link.active:hover {
+            background-color:#A9C4BB;
+            color: #FFFFFF!important;
+        }
+        .nav-link{
+            color: white !important;
+            text-decoration: none;
+        }
+        .col-4.nav-item{
+            background-color:#A9C4BB;
+            color: white !important;
+        }
+        .img-circle {
+            border-radius: 50%;
+        }
+        #livrosHeader{
+            color:#ffffff;
+        }
+        #livrosFooter{
+            color:#ffffff;
+        }
+        #RevistaHeader{
+            color:#ffffff;
+        }
+        #RevistaFooter{
+            color:#ffffff;
+        }
+        .dropdown-item{
+            color: #ffffff;
+        }
+        footer{
+            background-color: #96811D;
+            color: #FFFFFF;
+            font-family: cabin;
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
+        livrosFooter{
+            background-color: #96811D;
+            color: #FFFFFF;
+            font-family: cabin;
+        }
+        .dropdown-menu{
+            background-color:#A9C4BB;
+        }
+        .dropdown-menu.footer{
+            background-color: #96811D;
+        }
+        .buttonInscrevase{
+            color: #FFFFFF;
+            background-color: #96811D;
+        }
+        .tituloLivro autoria{
+            color: #06171F;
+            font-size: 18px;
+        }
+        .tituloLivro{
+            font-size: 20px;
+        }
+        .biografia{
+            color: #96811D;
+            font-size: 15px;
+        }
+        .descritivo{
+            color: #96811D;
+            font-size: 15px;
+        }
+        .livros{
+            font-family: cabin;
+        }
+        .dropdown-item{
+            color: #ffffff;
+        }
 
-}
-    }
+        /*NEW*/
 
-/* Estilos para computadores */
-@media (min-width: 769px) {
-  .swiper-wrapper.myimgs {
-    width: 400px !important; /* Definir uma largura fixa para computadores */
-    height: 365px;
-  }
-  .swiper-slide{
-       width: 400px !important; /* Definir uma largura fixa para computadores */
-        height: 365px;
-  }
+        #container-header{
+            background-color: #A9C4BB;
+            font-family:  cabin negrito;
+            width: 100%;
+        }
+        .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
+            color:#FFFFFF; !important;
+        }
 
-}
-/* Estilos para celular */
- .swiper-wrapper.myimgs {
-  width: 100%;
-  height: auto; /* Altura automática */
-}
+        /* Style the album container */
+        /* Center the content in the container */
+        .container {
+            max-width: 1500px;
+            margin: 50px auto;
+        }
+        @media (max-width: 767px) {
+            margin: 50px 10%;
+        }
+        /* Style the card layout */
+        body{
+            margin: 0;
+            overflow-x: hidden;
+        }
+        h4 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #fff;
+        }
+        #apresentacao p{
+            color: black;
+            margin-bottom: 20px;
+        }
 
-@media only screen and (min-width: 769px) {
-    .custom-col {
-        /* para telas maiores que 769px */
-        width: 25%;
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-}
+        a {
+            color:#F9B233;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
 
-/* Restaurar para col-12 em dispositivos menores */
-@media only screen and (max-width: 768px) {
-    .custom-col {
-        width: 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-.redirect-overlay {
-    position: static;
-    width: 800px;
-    height: 100%;
-    z-index: 1;
-    text-align: center;
-}
+        a:hover {
+            color: #E87600; /* Dark orange color */
+        }
 
-.btn {
-    margin: 0 auto;
-    display: inline-block;
-}
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-/* Adicionar responsividade para dispositivos móveis */
-@media (max-width: 768px) {
-    iframe {
-        height: 500px; /* Ajuste conforme necessário para telas menores */
-    }
+        li {
+            margin-bottom: 10px;
+        }
 
-    .redirect-overlay {
-        width: 100%;
-        height: 100%;
-        margin-top: 20px; /* Ajustar espaçamento superior em telas menores */
-    }
-}
+        @media (max-width: 768px) {
+            .footer-section {
+                flex: 0 0 100%;
+            }
+        }
+        /* Estilo para ajustar o tamanho das imagens e centralizá-las */
+        .carousel-item img {
+            max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+            margin: 0 auto; /* Centraliza horizontalmente */
+        }
+        /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
+        @media (max-width: 767px) {
+            .carousel-indicators {
+                bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
+            }
+        }
+        @media (max-width: 767px) {
+            .card{
+                width:265px;
+                height: 500px;
 
-</style>
+            }
+        }
+        .container-footer1{
+            position: relative;
+            text-align: center;
+            margin-top: 20px; /* Ajuste conforme necessário */
+        }
+        .icons i {
+            font-size: 24px;
+            margin-left: 10px;
+        }
 
+        @media (max-width: 767.98px) {
 
+            .icons i {
+                font-size: 20px;
+                margin-left: 8px;
+            }
+
+            .container img {
+                width: 90px; /* Ajuste conforme necessário para telas menores */
+            }
+        }
+        .container-contatos{
+            position: relative;
+            text-align: left;
+            margin: 10px 215px;
+        }
+        .container-footer2{
+            position: relative;
+            text-align: left;
+            margin: 10px 215px;
+        }
+    </style>
 </head>
 <body>
 
 
 <!-- START HEADER NAVIGATION -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid" style="font-size: 25px;">
-        <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01-%20LOGO%20PRINCIPAL.png" alt="A desFrutada" width="90" height="80"></a>
+<nav class="navbar navbar-expand-lg" id="container-header">
+    <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
+        <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="poliamar.html">Poliamar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="A_Remetente.html">A Remetente</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Múltiplas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-                </li>
-            </ul>
-        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="livrosHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Livros
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLivros">
+                    <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
+                    <a class="dropdown-item" href="#">Antologias</a>
+                    <a class="dropdown-item" href="#">Poesias</a>
+                </div>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="A_Remetente.html">Ebooks</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="RevistaHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Revistas
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEbook">
+                    <a class="dropdown-item" href="#">Última Edição</a>
+                    <a class="dropdown-item" href="#">Inscreva-se</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
+            </li>
+        </ul>
     </div>
 </nav>
 <!-- END HEADER NAVIGATION -->
-
 
 <!-- START HEADING SECTION -->
 <div class="about_content">
     <div class="container">
         <div class="row">
             <div class="col-12">
-
                 <div class="product-body">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb text-center text-lg-left">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item"><a  href="poliamar.html">Poliamar</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="A_Remetente.html">A Remetente</a></li>
-                            <li class="breadcrumb-item" aria-current="page"><a href="multiplas.html">Múltiplas</a></li>
-                        </ol>
-                    </nav>
-                    <div class="pro-detail-sec row">
-                        <div class="col-12">
-                            <h4 class="pro-heading text-center text-lg-left">Múltiplas:</h4>
-                            <p class="pro-text text-center text-lg-left"> "Múltiplas" é uma coleção composta por quatro livros de autoras brasileiras contemporâneas, classificados no prêmio Carolina Maria de Jesus, do Ministério da Cultura, em 2023.
-                                Em comum, os livros trazem a multiplicidade do que é ser mulher no Brasil atual. Através de textos curtos, trazem histórias, memórias, significados e papéis desempenhados por elas.</p>
-                        </div>
-                    </div>
                     <div class="row product-list product-detail">
 
-                        <div class="col-12 col-lg-6 product-detail-slider">
-                            <div class="wrapper">
-                                <div class="Gallery swiper-container img-magnifier-container" id="gallery">
-                                    <div class="swiper-wrapper myimgs">
-                                        <div class="swiper-slide"> <a href="img/Box%20Coleção.png" data-fancybox="2" title="Zoom In"><img class="myimage" src="img/Box%20Coleção.png"  alt="thumnails"/></a></div>
-                                        <div class="swiper-slide"> <a href="img/SELO%20prêmio%20Carolina%20Maria%20de%20Jesus.png" data-fancybox="3" title="Zoom In"><img id="imgMaria" class="myimage" src="img/SELO%20prêmio%20Carolina%20Maria%20de%20Jesus.png" alt="thumnails"/></a></div>
-                                    </div>
-                                </div>
-                                <div class="Thumbs swiper-container" id="thumbs">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide" style="margin-left: -75px;" > <img src="img/Box%20Coleção.png" style="margin-left:-46px;width:264px;" alt="thumnails"/></div>
-                                        <div class="swiper-slide" style="margin-left: -100px;"> <img src="img/SELO%20prêmio%20Carolina%20Maria%20de%20Jesus.png"  alt="thumnails" style="width:100px;margin-left:100px;"/></div>
-                                    </div>
-                                </div>
+                        <div class="container-fluid py-5 justify-content-center container-sobre col-md-12 row">
+                            <div style="display: flex; align-items: center">
+                                <img style="width: 40px; margin-right: 8px;" src="img/Ativo%2025@10x.png">
+                                <h2 class="text-center mt-4" style="color: #96811D;">Coleções Múltiplas</h2>
+                            </div>
+                            <div class="display-4 fw-bold col-md-8 row">
+                                <h3 class="col-md-8 fs-4 fw-bold col-md-4">"Múltiplas" é uma coleção composta por quatro livros de autoras brasileiras contemporâneas, classificados no prêmio Carolina Maria de Jesus, do Ministério da Cultura, em 2023.<br><br>Em comum, os livros trazem a multiplicidade do que é ser mulher no Brasil atual. Através de textos curtos, trazem histórias, memórias, significados e papéis desempenhados por elas.</h3>
+                                <h3 class="col-md-8 fs-4 fw-bold col-md-4"></h3>
+                            </div>
+                            <div class="col-md-4 row">
+                                <img style="width: 300px; margin-right: -148px;background-attachment: fixed;height: 355px;" src="img/Ativo%2025@10x.png">
+                                <img style="width: 285px; margin-right: 8px;margin-top: 55px;" src="img/Box%20Coleção.png">
+                                <button class="buttonInscrevase mt-2" style=" width: 160px;border: none; border-radius: 30px">COMOPRAR<br>COLEÇÃO</button>
                             </div>
                         </div>
-
-                        <div class="col-12 col-lg-6 text-center text-lg-left">
-                            <div class="product-single-price">
-                                <h4><span class="real-price">R$150/coleção completa</span> <span><del>R$200</del></span></h4>
-                                <p class="pro-description">“Múltiplas” é uma coleção que trará lágrimas, sorrisos e reflexões. Certamente, é nesses diferentes pontos de vista em que todas as pluralidades se encontrarão.
-                                Os contos de “Em nós”, de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres. 
-                                    A prosa poética de “Um livro de Ausências ou Tudo o que eu sinto me tem”, de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. 
-                                    Nos versos de “Eutimologia”, de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo. 
-                                    Por fim, nas crônicas de “Vem comigo que no caminho te explico”, de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.</p>
-                            </div>
-
-                            <div class="product-checklist">
-                                <ul>
-                                    <li><i class="fas fa-check"></i> Compra Segura</li>
-                                    <li><i class="fas fa-check"></i>Acesso Fácil</li>
-                                    <li><i class="fas fa-check"></i>Adquira agora</li>
-                                </ul>
-                            </div>
-
-                            <div class="row product-quantity input_plus_mins no-gutters">
-
-                                <div class="qty col-12 col-lg-3 d-lg-flex  align-items-lg-center d-inline-block">
-                                </div>
-                                <div class="col-12 col-lg-9">
-                                    <a href="https://maralheios01.sualojaonline.app/" target="_blank">
-                                    <button class="btn green-color-yellow-gradient-btn">Comprar</button>
-                                    </a>
-                                </div>
-                            </div>
-
-
-                            <div class="dropdown-divider"></div>
-
-                            <div class="product-tags-list">
-                                <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item"><span class="d-inline">Editora:  </span><a href="javascript:void(0)">Maralheios</a></li>
-                                        <li class="breadcrumb-item"><span class="d-inline">Gênero: </span><a href="javascript:void(0)"> Poesia e Prosa</a></li>
-                                    </ol>
-                                </nav>
-                            </div>
-                        </div>
-
-
-                            <div class="row no-gutters product-all-details">
-
-                                <ul class="col-12 nav nav-tabs" id="myTab" role="tablist">
+                                <ul class="col-12 nav nav-tabs" id="tabsmultiplas" role="tablist">
                                     <li class="col-4 nav-item">
-                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">+ Descrição</a>
+                                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#descricao" role="tab" aria-controls="home" aria-selected="true">Livros</a>
                                     </li>
                                     <li class="col-4 nav-item">
-                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Loja</a>
+                                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#autoras" role="tab" aria-controls="profile" aria-selected="false">Autoras</a>
+                                    </li>
+                                    <li class="col-4 nav-item">
+                                        <a class="nav-link" id="profile-tab2" data-toggle="tab" href="#detalhes" role="tab" aria-controls="profile" aria-selected="false">Sinopse + detalhes</a>
                                     </li>
                                 </ul>
                                 <div class="col-12 tab-content" id="myTabContent">
-                                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                                        <p class="product-tab-description text-center text-lg-left"> A coleção "Múltiplas" apresenta literatura contemporânea feita por mulheres em textos curtos e fascinantes.
-                                            Em comum, os livros trazem a multiplicidade do que é ser mulher no Brasil atual. Histórias, memórias, significados e papéis desempenhados por elas são temas que emergem das páginas de "Múltiplas"
-                                            Os contos de “Em nós”, de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres. O livro é um espelho, uma janela, uma porta, para o universo feminino.
-                                            A prosa poética de “Um livro de Ausências”, de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. Sobressai uma incansável persistência frente às perdas e ausências, restando a eterna surpresa da vida.
-                                            Nos versos de “Eutimologia”, de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo.
-                                            Por fim, nas crônicas de “Vem comigo que no caminho te explico”, de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.
-                                            “Múltiplas” é uma coleção que trará lágrimas, sorrisos e reflexões. Certamente, é nesses diferentes pontos de vista em que todas as pluralidades se encontrarão.</p>
-                                    </div>
-                                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                                        <div class="row">
-                                            <div class="col-12 col-md-8 mx-auto">
-                                                <iframe src="https://maralheios01.sualojaonline.app/" href="https://maralheios01.sualojaonline.app/" width="100%" height="800px" frameborder="0"></iframe>
-                                                <div class="redirect-overlay mt-5" onclick="window.location.href='https://maralheios01.sualojaonline.app/'">
-                                                    <button class="btn green-color-yellow-gradient-btn" target="_blank">Ir para o Site de Compras</button>
+                                    <div class="tab-pane fade show active" id="descricao" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="row justify-content-center text-center">
+                                            <div class="col-md-2 p-3 me-4">
+                                                <img style="width: 210px;" src="img/um%20livro%20de%20ausências.jpeg">
+                                                <div class="justify-content-between align-items-center text-center">
+                                                    <div class="livros mt-2">
+                                                        <span class="tituloLivro">um livro de ausências</span><br>
+                                                        <span class="autoria">Isabela Mendeleh</span><br>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <!---div class="col-12">
-
-                                                <div class="row">
-                                                    <div class="col-md-3 p-3">
-                                                        <div class="card shadow-sm">
-                                                            <small class="" style="font-size: 14px;">Etimologia</small>
-                                                            <img src="img/Eutimologia.jpeg">
-                                                            <div class="card-body text-center">
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="link">
-                                                                        <div class="accordion" id="accordionEtimologia">
-                                                                            <div class="accordion-item">
-                                                                                <h2 class="accordion-header" id="Etimologia-headingOne">
-                                                                                    <button class="accordion-button btn purple-color-blue-gradient-btn" type="button" data-bs-toggle="collapse" data-bs-target="#etimologia"  aria-controls="etimologia">
-                                                                                        Descrição
-                                                                                    </button>
-                                                                                </h2>
-                                                                                <div id="etimologia" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                                                                    <div class="accordion-body">
-                                                                                        Nos versos de “Eutimologia”, de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo.
-                                                                                        Ju Lopse é escritora, produtora cultural e musicoterapeuta. Integrou diversas coletâneas e publicou nas revistas Alcateia e Contos de Samsara, além de ser uma das 10 finalistas do 10⁰ FESPOED (2020). Em 2021, publicou seu livro de estreia, “Novas sobre ela”, e atua como editora na Maralheios. É uma das idealiza
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <br/>
-                                                                        <a href="https://pag.ae/7-pZEjeHN" target="_blank" >
-                                                                            <button class="btn purple-color-blue-gradient-btn">Comprar Eutimologia</button>
-                                                                        </a>
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                            <div class="col-md-2 p-3 me-4">
+                                                <img style="width: 210px;" src="img/Em%20Nós.jpeg">
+                                                <div class="justify-content-between align-items-center text-center">
+                                                    <div class="livros mt-2">
+                                                        <span class="tituloLivro">Em nós</span><br>
+                                                        <span class="autoria">Malvina de Castro Rosa</span><br>
                                                     </div>
-                                                    <div class="col-md-3 p-3">
-                                                        <div class="card shadow-sm">
-                                                            <small class="" style="font-size: 14px;">Em Nós</small>
-                                                            <img src="img/Em%20Nós.jpeg">
-                                                            <div class="card-body text-center">
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="">
-                                                                        <div class="accordion" id="accordionPanelsStayOpenExample">
-                                                                            <div class="accordion-item">
-                                                                                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                                                                                    <button class="accordion-button btn purple-color-blue-gradient-btn" type="button" data-bs-toggle="collapse" data-bs-target="#emnos"  aria-controls="emnos">
-                                                                                        Descrição
-                                                                                    </button>
-                                                                                </h2>
-                                                                                <div id="emnos" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                                                                    <div class="accordion-body">
-                                                                                        Os contos de “Em nós”, de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres. O livro é um espelho, uma janela, uma porta, para o universo feminino.
-                                                                                        Malvina de Castro Rosa, natural de Porto Alegre, é Escritora, Relações Públicas, Produtora Cultural, mestre em Design Estratégico. Em 2013 publicou “As loucas aventuras da guria maluca”, em 2021 o romance “Paralelos Cruzados” e em 2023“Crônicas de um fim do mundo anunciado”.
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <br/>
-                                                                        <a href="https://pag.ae/7-pZFqu2L" target="_blank" >
-                                                                            <button class="btn purple-color-blue-gradient-btn">Comprar Em nós</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 p-3 me-4">
+                                                <img style="width: 210px;height: 315px;" src="img/Eutimologia.jpeg">
+                                                <div class="justify-content-between align-items-center text-center">
+                                                    <div class="livros mt-2">
+                                                        <span class="tituloLivro">Eutimologia</span><br>
+                                                        <span class="autoria">Ju Lopse</span><br>
                                                     </div>
-                                                    <div class="col-md-3 p-3">
-                                                        <div class="card shadow-sm">
-                                                            <small class="" style="font-size: 14px;">Vem Comigo Que No Caminho Te Explico</small>
-                                                            <img src="img/Vem%20Comigo%20que%20no%20caminho%20te%20explico.jpeg">
-                                                            <div class="card-body text-center">
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="">
-                                                                        <div class="accordion" id="emNosOpenExample">
-                                                                            <div class="accordion-item">
-                                                                                <h2 class="accordion-header" id="vemOpen-headingOne">
-                                                                                    <button class="accordion-button btn purple-color-blue-gradient-btn" type="button" data-bs-toggle="collapse" data-bs-target="#vem"  aria-controls="vem">
-                                                                                        Descrição
-                                                                                    </button>
-                                                                                </h2>
-                                                                                <div id="vem" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                                                                    <div class="accordion-body">
-                                                                                        Nas crônicas de “Vem comigo que no caminho te explico”, de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.
-                                                                                        GENEVIÈVE FAÉ nasceu em Caxias do Sul-RS. Cursou Letras e, empolgada pelo mundo dos livros, fez Mestrado em Letras, Cultura e Regionalidade. É mãe do Pedro e, nas horas vagas, professora de redação. Em 2022, lançou o livro “Ponha-se no seu lugar”, pela Patuá
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <br/>
-                                                                        <a href="https://pag.ae/7-pZGZqxN" target="_blank" >
-                                                                            <button class="btn purple-color-blue-gradient-btn">Comprar Vem comigo que no caminho te explico</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 p-3 me-4">
+                                                <img style="width: 210px;" src="img/Vem%20Comigo%20que%20no%20caminho%20te%20explico.jpeg">
+                                                <div class="justify-content-between align-items-center text-center">
+                                                    <div class="livros mt-2">
+                                                        <span class="tituloLivro">Vem comigo...</span><br>
+                                                        <span class="autoria">Geneviève Faé</span><br>
                                                     </div>
-                                                    <div class="col-md-3 p-3">
-                                                        <div class="card shadow-sm">
-                                                            <small class="" style="font-size: 14px;">Um Livro de Ausências</small>
-                                                            <img src="img/um%20livro%20de%20ausências.jpeg">
-                                                            <div class="card-body text-center">
-                                                                <div class="d-flex justify-content-between align-items-center">
-                                                                    <div class="">
-                                                                        <div class="accordion" id="umLivroOpenExample">
-                                                                            <div class="accordion-item">
-                                                                                <h2 class="accordion-header" id="umLivroOpen-headingOne">
-                                                                                    <button class="accordion-button btn purple-color-blue-gradient-btn" type="button" data-bs-toggle="collapse" data-bs-target="#ausencia"  aria-controls="ausencia">
-                                                                                        Descrição
-                                                                                    </button>
-                                                                                </h2>
-                                                                                <div id="ausencia" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-                                                                                    <div class="accordion-body">
-                                                                                        A prosa poética de “Um livro de Ausências”, de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. Sobressai uma incansável persistência frente às perdas e ausências, restando a eterna surpresa da vida.
-                                                                                        Isabela Mendeleh nasceu na manhã do dia 8 de dezembro de 1987, em Ilhabela.
-                                                                                        É formada em Educação Física pela Universidade Estadual de Campinas (UNICAMP). Professora de práticas corporais. Teve diversos textos publicados em antologias.
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <br/>
-                                                                        <a href="https://pag.ae/7-pZJB1YL" target="_blank" >
-                                                                            <button class="btn purple-color-blue-gradient-btn">Um livro de ausências</button>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="tab-pane fade" id="autoras" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="equipe-cards col-md-12 mt-5 row justify-content-center text-center">
+                                            <div class="col-md-2 me-4">
+                                                <img class="img-circle" style="width: 210px;" src="img/Mandi.jpeg">
+                                                <div class="livros mt-2">
+                                                    <span class="tituloLivro"> Isabela Mendeleh</span><br>
+                                                    <h4 class="biografia mt-5">BIO</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 me-4">
+                                                <img class="img-circle" style="width: 210px;" src="img/Mandi.jpeg">
+                                                <div class="livros mt-2">
+                                                    <span class="tituloLivro">Malvina de Castro Rosa</span><br>
+                                                    <h4 class="biografia mt-5">BIO</h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 me-4">
+                                                <img class="img-circle" style="width: 210px;" src="img/Ju.png">
+                                                <div class="livros mt-2">
+                                                    <span class="tituloLivro">JU LOPSE</span><br>
+                                                    <h4 class="biografia mt-5">Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p></h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2 me-4">
+                                                <img class="img-circle" style="width: 210px;" src="img/Artur.jpeg">
+                                                <div class="livros mt-2">
+                                                    <span class="tituloLivro">Geneviève Faé</span><br>
+                                                    <h4 class="biografia mt-5">BIO</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                <div class="tab-pane fade" id="detalhes" role="tabpanel" aria-labelledby="profile-tab">
+                                        <div class="row">
+                                            <div class="row justify-content-center text-center">
+                                                <div class="col-md-2 p-3 me-4">
+                                                    <div class="justify-content-between align-items-center text-center">
+                                                        <div class="livros mt-2">
+                                                            <span class="tituloLivro">um livro de ausências</span><br>
+                                                            <span class="autoria">ou tudo que sinto me tem</span><br>
+                                                            <h4 class="descritivo mt-5">AUTORA: Isabela Mendeleh<br>
+                                                                ISBN: 9786598242633<br>
+                                                                ANO: 2024<br>
+                                                                GÊNERO: PROSA POÉTICA<br>
+                                                                SINOPSE: A prosa poética de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. </h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <table class="table table-striped">
-                                                    <thead>
-                                                    <tr>
-                                                        <th scope="col">Etimologia</th>
-                                                        <th scope="col">Em Nós</th>
-                                                        <th scope="col">Vem Comigo Que No Caminho Te Explico </th>
-                                                        <th scope="col">Um Livro de Ausências</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody style="height: 50px;">
-                                                    <tr>
-                                                        <td>
-                                                            <img src="img/Eutimologia.jpeg" style="width: 150px;">
-                                                        </td>
-                                                        <td>
-                                                            <img src="img/Em Nós.jpeg" style="width: 150px;">
-                                                        </td>
-                                                        <td>
-                                                            <img src="img/Vem Comigo que no caminho te explico.jpeg" style="width: 150px;">
-                                                        </td>
-                                                        <td>
-                                                            <img src="img/um livro de ausências.jpeg" style="width: 150px;">
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            Nos versos de “Eutimologia”, de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo.
-                                                            Ju Lopse é escritora, produtora cultural e musicoterapeuta. Integrou diversas coletâneas e publicou nas revistas Alcateia e Contos de Samsara, além de ser uma das 10 finalistas do 10⁰ FESPOED (2020). Em 2021, publicou seu livro de estreia, “Novas sobre ela”, e atua como editora na Maralheios. É uma das idealiza
-                                                        </td>
-                                                        <td>
-                                                            Os contos de “Em nós”, de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres. O livro é um espelho, uma janela, uma porta, para o universo feminino.
-                                                            Malvina de Castro Rosa, natural de Porto Alegre, é Escritora, Relações Públicas, Produtora Cultural, mestre em Design Estratégico. Em 2013 publicou “As loucas aventuras da guria maluca”, em 2021 o romance “Paralelos Cruzados” e em 2023“Crônicas de um fim do mundo anunciado”.
-                                                        </td>
-                                                        <td>
-                                                            Nas crônicas de “Vem comigo que no caminho te explico”, de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.
-                                                            GENEVIÈVE FAÉ nasceu em Caxias do Sul-RS. Cursou Letras e, empolgada pelo mundo dos livros, fez Mestrado em Letras, Cultura e Regionalidade. É mãe do Pedro e, nas horas vagas, professora de redação. Em 2022, lançou o livro “Ponha-se no seu lugar”, pela Patuá
-                                                        </td>
-                                                        <td>
-                                                            A prosa poética de “Um livro de Ausências”, de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. Sobressai uma incansável persistência frente às perdas e ausências, restando a eterna surpresa da vida.
-                                                            Isabela Mendeleh nasceu na manhã do dia 8 de dezembro de 1987, em Ilhabela.
-                                                            É formada em Educação Física pela Universidade Estadual de Campinas (UNICAMP). Professora de práticas corporais. Teve diversos textos publicados em antologias.
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <a href="https://pag.ae/7-pZEjeHN" >
-                                                                <button class="btn purple-color-blue-gradient-btn">Comprar Eutimologia</button>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <a href="https://pag.ae/7-pZFqu2L" >
-                                                                <button class="btn purple-color-blue-gradient-btn">Comprar Em nós</button>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <a href="https://pag.ae/7-pZGZqxN" >
-                                                                <button class="btn purple-color-blue-gradient-btn">Comprar Vem comigo que no caminho te explico</button>
-                                                            </a>
-                                                        </td>
-                                                        <td>
-                                                            <a href="https://pag.ae/7-pZJB1YL" >
-                                                                <button class="btn purple-color-blue-gradient-btn">Um livro de ausências</button>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-
-                                                </table>
-                                            </div!--->
+                                                <div class="col-md-2 p-3 me-4">
+                                                    <div class="justify-content-between align-items-center text-center">
+                                                        <div class="livros mt-2">
+                                                            <span class="tituloLivro">Em nós</span><br>
+                                                            <span class="autoria"></span><br>
+                                                            <h4 class="descritivo mt-5">AUTORA: Malvina de Castro Rosa<br>
+                                                                ISBN:9786598242626<br>
+                                                                ANO: 2024<br>
+                                                                GÊNERO: CONTOS<br>
+                                                                SINOPSE: Os contos de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres.</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 p-3 me-4">
+                                                    <div class="justify-content-between align-items-center text-center">
+                                                        <div class="livros mt-2">
+                                                            <span class="tituloLivro">Eutimologia</span><br>
+                                                            <span class="autoria"></span><br>
+                                                            <h4 class="descritivo mt-5">AUTORA: Ju Lopse<br>
+                                                                ISBN:9786598242640<br>
+                                                                ANO: 2024<br>
+                                                                GÊNERO: POESIA<br>
+                                                                SINOPSE: Nos versos de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo.</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 p-3 me-4">
+                                                    <div class="justify-content-between align-items-center text-center">
+                                                        <div class="livros mt-2">
+                                                            <div class="row">
+                                                            <h5 class="tituloLivro">Vem comigo que no caminho te explico </h5><span>Crônicas da Maternidade Real</span><br>
+                                                            </div>
+                                                            <h4 class="descritivo mt-5">AUTORA: Geneviève Faé<br>
+                                                                ISBN:9786598242619<br>
+                                                                ANO: 2024<br>
+                                                                GÊNERO: CRÔNICAS<br>
+                                                                SINOPSE:As crônicas de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.</h4>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                     </div>
                                 </div>
 
-                            
-                        
+
+
                         </div>
-
-                    </div>
-
-
                 </div>
-
             </div>
         </div>
     </div>
-
-
 </div>
 
+<!-- FOOTER -->
+<footer>
+    <div class="container-footer1">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-3" style="margin-left: 80px;">
+                <img style="width: 110px;"  src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png">
+            </div>
+            <div class="col-4">
+                <div class="icons">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-threads"></i>
+                </div>
+            </div>
+        </div>
+        <hr style="border-top: 5px solid #0f0f0f;width: 75%;margin: 0 auto">
+    </div>
 
+    <div class="container-contatos" style="margin-bottom: 40px">
+        <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
+        <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
+            <div class="col-md-6 align-items-center justify-content-between">
+                <h4><i class="fa-regular fa-envelope" style="margin-right: 9px;"></i>
+                    contato@maralheios.com</h4>
+            </div>
+            <!---div class="col-md-6 d-flex justify-content-between align-items-center">
+                <h4>Inscreva-se para as novidades</h4>
+            </div>
+            <div class="row">
+                <div class="col-md-6 offset-md-6" style="margin-left: 51%">
+                    <input style="width: 280px; margin-top: 10px; border: none; border-radius: 10px;'" type="text">
+                </div>
+            </div!--->
+        </div>
+    </div>
+    <div class="container-footer2">
+        <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
+            <div class="col-6">
+                <!---h3>Política de Privacidade</h3!--->
+            </div>
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home"><i class="fa-solid fa-house"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                        </li>
+                        <li class="nav-item dropdown dropup">
+                            <a class="nav-link dropdown-toggle" id="livrosFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Livros
+                            </a>
+                            <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
+                                <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
+                                <a class="dropdown-item" href="#">Antologias</a>
+                                <a class="dropdown-item" href="#">Poesias</a>
+                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="A_Remetente.html">Ebooks</a>
+                        </li>
+                        <li class="nav-item dropdown dropup">
+                            <a class="nav-link dropdown-toggle" id="RevistaFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Revistas
+                            </a>
+                            <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
+                                <a class="dropdown-item" href="#">Última Edição</a>
+                                <a class="dropdown-item" href="#">Inscreva-se</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="multiplas.html">Loja</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
 
 <script src="../vendor/js/bundle.min.js"></script>
-<!-- Plugin Js -->
-<script src="../vendor/js/jquery.fancybox.min.js"></script>
-<script src="../vendor/js/owl.carousel.min.js"></script>
-<script src="../vendor/js/swiper.min.js"></script>
-<script src="../vendor/js/jquery.cubeportfolio.min.js"></script>
-<script src="../vendor/js/wow.min.js"></script>
-<script src="../vendor/js/bootstrap-input-spinner.js"></script>
-<script src="../vendor/js/parallaxie.min.js"></script>
-<script src="../vendor/js/stickyfill.min.js"></script>
-<script src="../book-shop/js/nouislider.min.js"></script>
 <!-- Custom Script -->
 <script src="../book-shop/js/script.js"></script>
 </body>

@@ -290,7 +290,7 @@ ul.links li a::before,
     padding: 8px 0 !important;
     text-transform: capitalize;
     font-size: 14px;
-    color: #96811D;
+    color: #ffffff;
     position: relative;
     line-height: normal;
     margin: 16px 1.25rem;
@@ -466,6 +466,7 @@ ul.links li a::before,
     background: transparent;
     font-weight: normal;
     font-size: 16px;
+    color: #ffffff;
     padding: 0 0 0 0.5rem;
     line-height: 40px;
     display: inline;
@@ -486,7 +487,7 @@ a.dropdown-toggle::after {
 
 .dropdown-menu .dropdown-item,
 .dropdown-menu .dropdown-title {
-    color: #26313c;
+    color: #ffffff;
 }
 
 .dropdown-item.active {
@@ -539,6 +540,8 @@ a.dropdown-toggle::after {
         opacity: 0.4;
         visibility: hidden;
         min-width: 260px;
+        background-color: #A9C4BB;
+        color: #ffffff;
         transform: scale(1, 0);
         transform-origin: 0 0;
         left: -60%;
