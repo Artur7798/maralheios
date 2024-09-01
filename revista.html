@@ -11,51 +11,42 @@
     <!-- keywords -->
     <meta name="keywords" content="maralheios, poesia, literatura, feminismo, amor, poliamar, amanda, livro, ebook, amazon, compre, multiplas">
     <!-- Page Title -->
-    <title>Antologias</title>
+    <title>Revista - Última Edição</title>
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/vendor/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/vendor/css/swiper.min.css">
-    <link rel="stylesheet" href="/shop/css/nouislider.min.css">
-    <link rel="stylesheet" href="/shop/css/range-slider.css">
+
     <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
-        .container-info-antologia{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 20px auto;
+        .comprarAmazon{
+            color: #FFFFFF;
+            background-color: #96811D;
         }
-        .container_form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            margin: 20px auto;
-            padding: 20px;
-            width: 640px;
-            border-radius: 50px;
-            border: 5px white solid;
+        .comprarImpresso{
+            color: #FFFFFF;
+            background-color: #96811D;
         }
-        .container_form input,
-        .container_form textarea {
-            width: 70%;
-            border-radius: 30px;
-            padding-left: 10px;
+        #tabsmultiplas .nav-item .nav-link.active{
+            background-color:  #1b1e21;
+            color: #FFFFFF !important;
         }
-        .container_form textarea {
-            width: 70%;
-            border-radius: 30px;
-            padding-left: 10px;
+        .nav-item .nav-link.active:hover {
+            background-color:#A9C4BB;
+            color: #FFFFFF!important;
         }
-        .container_form h5 {
-            text-align: center;
-            margin-bottom: 20px; /* Espaçamento abaixo do título */
+        .nav-link{
+            color: white !important;
+            text-decoration: none;
+        }
+        .col-4.nav-item{
+            background-color:#A9C4BB;
+            color: white !important;
+        }
+        .img-circle {
+            border-radius: 50%;
         }
         #livrosHeader{
             color:#ffffff;
@@ -90,21 +81,10 @@
         .dropdown-menu.footer{
             background-color: #96811D;
         }
-        .edicaoNome{
-            color: #06171F;
-        }
-        .coletivo{
-            color: #06171F;
-        }
         .buttonInscrevase{
             color: #FFFFFF;
             background-color: #96811D;
         }
-        .container_revista{
-            font-family: cabin;
-            background-color: transparent;
-        }
-
         .tituloLivro autoria{
             color: #06171F;
             font-size: 18px;
@@ -112,7 +92,11 @@
         .tituloLivro{
             font-size: 20px;
         }
-        .hastagLivro{
+        .biografia{
+            color: #96811D;
+            font-size: 15px;
+        }
+        .descritivo{
             color: #96811D;
             font-size: 15px;
         }
@@ -135,14 +119,6 @@
         }
 
         /* Style the album container */
-        .album {
-            background-color: #ffffff;
-        }
-
-        .col-md-3{
-            width: 100px;
-        }
-
         /* Center the content in the container */
         .container {
             max-width: 1500px;
@@ -151,101 +127,11 @@
         @media (max-width: 767px) {
             margin: 50px 10%;
         }
-
-        @media (max-width: 767px) {
-            .container, .container_revista, .container-livros {
-                margin: 50px auto;
-                width: 80%;
-
-            }
-        }
-
-        .container_revista, .container-livros {
-            margin: 50px 10%;
-            width: 80%;
-        }
-        @media (max-width: 767px) {
-            .container_revista, .container-livros {
-                margin: 50px 10%;
-                width: 80%;
-            }
-        }
-
-
-
-
         /* Style the card layout */
-        .row-cols-1,
-        .row-cols-sm-2,
-        .row-cols-md-3 {
-            display: flex;
-            flex-wrap: wrap;
-            margin: -15px;
-        }
-
-        /* Add space between cards */
-        .col {
-            padding: 15px;
-        }
-
-        /* Style the cards */
-        .card {
-            width: 100%;
-            height: 430px;
-            max-width: 300px;
-            margin: 15px auto;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            word-wrap: break-word;
-            background-color: #fff;
-            background-clip: border-box;
-        }
-
-        /* Style the card body */
-        .card-body {
-            flex: 1 1 auto;
-            padding: 1.25rem;
-        }
-
-        /* Style the card text */
-        .card-text {
-            margin-bottom: 1rem;
-        }
-
-        /* Style the buttons */
-        .btn-group {
-            margin-right: 5px;
-        }
-
-        /* Style the timestamp */
-        .text-muted {
-            font-size: 0.85em;
-            color: #96811D; /* Timestamp color */
-        }
-
-        /* Add shadow to cards on hover */
-        .card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
         body{
             margin: 0;
             overflow-x: hidden;
         }
-
-        .footer-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .footer-section {
-            flex: 0 0 30%;
-            text-align: center;
-        }
-
         h4 {
             font-size: 24px;
             margin-bottom: 15px;
@@ -281,40 +167,10 @@
                 flex: 0 0 100%;
             }
         }
-        .carousel-control-prev-icon,
-        .carousel-control-next-icon {
-            height: 100px;
-            width: 100px;
-            background-size: 100%, 100%;
-            background-image: none;
-        }
-
         /* Estilo para ajustar o tamanho das imagens e centralizá-las */
-        .carousel-inner {
-            display: flex;
-            align-items: center;
-            text-align: center;
-        }
-
-        .carousel-item {
-            text-align: center;
-        }
-
         .carousel-item img {
             max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
             margin: 0 auto; /* Centraliza horizontalmente */
-        }
-        .carousel-indicators {
-            position: absolute;
-            right: 0;
-            bottom: -40px;
-            left: 0;
-            z-index: 2;
-            display: flex;
-            justify-content: center;
-            padding: 0;
-            margin-right: 15%;
-            background-color:#96811D;
         }
         /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
         @media (max-width: 767px) {
@@ -322,32 +178,6 @@
                 bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
             }
         }
-        @media (max-width: 767px) {
-            #imgBanner1{
-                height: 250px;
-                width:100%;
-            }
-            #imgBanner2{
-                height: 250px;
-                width:100%;
-            }
-            #imgBanner3{
-                height: 250px;
-                width:100%;
-            }
-            #imgBanner4{
-                height: 250px;
-                width:100%;
-            }
-            #imgBanner5{
-                height: 250px;
-                width:100%;
-            }
-            #container-car{
-                height: 300px;
-            }
-        }
-
         @media (max-width: 767px) {
             .card{
                 width:265px;
@@ -390,6 +220,7 @@
 </head>
 <body>
 
+
 <!-- START HEADER NAVIGATION -->
 <nav class="navbar navbar-expand-lg" id="container-header">
     <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
@@ -410,7 +241,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLivros">
                     <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-                    <a class="dropdown-item" href="#">Antologias</a>
+                    <a class="dropdown-item" href="antologias.html">Antologias</a>
                     <a class="dropdown-item" href="poesias.html">Poesias</a>
                 </div>
             <li class="nav-item">
@@ -421,7 +252,7 @@
                     Revistas
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEbook">
-                    <a class="dropdown-item" href="revista.html">Última Edição</a>
+                    <a class="dropdown-item" href="#">Última Edição</a>
                     <a class="dropdown-item" href="#">Inscreva-se</a>
                 </div>
             </li>
@@ -434,78 +265,95 @@
 <!-- END HEADER NAVIGATION -->
 
 <!-- START HEADING SECTION -->
-<div class="container-banners">
-    <div class="row">
-        <div class="col-lg-12 col-md-8" id="container-car">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <a href="#homeedicao1"  data-fancybox="lastest_product"  data-title="Shirt Name">
-                            <img src="img/banner01_maralheios.jpg" id="imgBanner1" class="card-img-top" alt="Maralheios">
-                        </a>
+<div class="about_content">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="product-body">
+                    <div class="row product-list product-detail">
+
+                        <div class="container-fluid py-5 justify-content-center container-sobre col-md-12 row">
+                            <div style="display: flex; align-items: center">
+                                <img style="width: 40px; margin-right: 8px;" src="img/Ativo%2025@10x.png">
+                                <h2 class="text-center mt-4" style="color: #96811D;">Revista virtual A desFrutada</h2>
+                            </div>
+                            <div class="display-4 fw-bold col-md-8 row">
+                                <h2 style="color: darkred">Um revista de Literatura e Arte com muita DIVERSIDADE!</h2><br>
+                                <h3 class="col-md-8 fs-4 fw-bold col-md-4">A desFrutada é uma revista virtual que se propõe a publicar textos e obras visuais de diferentes autorias, com teor pró direitos humanos e diversidade. Como o nome já indica, tem a intenção de elencar quem foi chamada, em algum momento de "desfrutada", em especial, mulheres cis e trans, pessoas LGBTQIAP+, pessoas negras, pessoas com deficiência e todas que se identifiquem com o termo e que pretendam frutificar.</h3>
+                            </div>
+                            <div class="col-md-4 row">
+                                <img style="width: 220px; margin-right: -348px;height: 230px;margin-left: 280px;" src="img/Ativo%2025@10x.png">
+                                <img style="margin-top: 165px;margin-left: -203px;" src="img/LOGO_adesfrutada.png">
+                            </div>
+                        </div>
+                        <hr style="border-top: 6px solid #a34c00; width: 50%; margin: 0 auto;">
+
+                        <div class="container-ebooks">
+                            <div style="display: flex; align-items: center;justify-content: center">
+                                <img style="width: 40px; margin-right: 8px;" src="img/Ativo%2025@10x.png">
+                                <h2 class="text-center" style="color: #96811D;">Edições</h2>
+                            </div>
+                            <div class="row justify-content-center text-center">
+                                <div class="col-md-2 p-3 me-4">
+                                    <img style="width: 210px;" src="img/em%20breve.png">
+                                    <div class="justify-content-between align-items-center text-center">
+                                        <div class="revista mt-2">
+                                            <span class="edicaoNome">Antologia A desFrutada</span><br>
+                                            <span class="coletivo">Org. Ju lopse e Mandi Moreira</span><br>
+                                            <h4 class="hastagLivro">#desFrutada #antologia</h4>
+                                            <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                            <button class="comprarImpresso mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR<br>IMPRESSO</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 p-3 me-4">
+                                    <img style="width: 210px;" src="img/Adesfrutadan3_capa.png">
+                                    <div class="justify-content-between align-items-center text-center">
+                                        <div class="revista mt-2">
+                                            <span class="edicaoNome">Edição #03</span><br>
+                                            <span class="coletivo">Part. Coletivo Mulheres do Ler</span><br>
+                                            <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 p-3 me-4">
+                                    <img style="width: 210px;" src="img/Adesfrutadan2_capa.png">
+                                    <div class="justify-content-between align-items-center text-center">
+                                        <div class="revista">
+                                            <span class="edicaoNome">Edição #02</span><br>
+                                            <span class="coletivo">Part. Coletivo ArteÁtipica</span>
+                                            <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 p-3 me-4">
+                                    <img style="width: 210px;" src="img/Adesfrutadan1_capa.png">
+                                    <div class="justify-content-between align-items-center text-center">
+                                        <div class="revista">
+                                            <span class="edicaoNome">Edição #01</span><br>
+                                            <span class="coletivo">Part. Coletivo EscreViventes</span>
+                                            <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2 p-3 me-4">
+                                    <img style="width: 210px;" src="img/Adesfrutadan0_capa.png">
+                                    <div class="justify-content-between align-items-center text-center">
+                                        <div class="revista">
+                                            <span class="edicaoNome">Edição #zero</span><br>
+                                            <span class="coletivo">Part. Coletivo Margem</span>
+                                            <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                        <a href="poliamar.html">
-                            <img src="img/banner02_maralheios.jpg" id="imgBanner2" class="card-img-top" alt="Poliamar">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="A_Remetente.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="img/banner03_maralheios.jpg" id="imgBanner3" class="card-img-top" alt="À Remetente - Amazon">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="https://adesfrutada.com/" target=_blank  >
-                            <img src="img/banner04_maralheios.jpg" id="imgBanner4" class="card-img-top" alt="Revista A Desfrutada">
-                        </a>
-                    </div>
-                    <div class="carousel-item">
-                        <a href="multiplas.html" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="img/Banner_PromoColeçãoMúltiplas.png" class="card-img-top" id="imgBanner5" alt="Coleções Múltiplas">
-                        </a>
-                    </div>
-                    <!--div class="carousel-item">
-                        <a href="#" data-fancybox="lastest_product"  data-title="Lastest Arrivals 1">
-                            <img src="img/banner05_maralheios.jpg" class="card-img-top" alt="Publique Seu Livro">
-                        </a>
-                    </div!-->
                 </div>
             </div>
         </div>
     </div>
 </div>
-
-<div class="container-form" style="color: white;background-color: #2e4a54">
-        <div class="row mt-5">
-            <div class="col-md-12">
-                <div class="row">
-                <div class="container-info-antologia col-md-6">
-                    <h2>Quer organizar uma antologia?</h2>
-                    <div class="col-md-6">
-                    <span>  Inscreva a sua ideia e conte com a nossa equipe para estruturar e dar vida à sua publicação!
-                            <br>
-                            Nós enviaremos um orçamento incluso desde a seleção de autores, até a etapa de impressão e distribuição. E você pode optar por financiamento coletivo para cobrir os custos!
-                    </span>
-                    </div>
-                </div>
-                    <div class="container_form col-md-6">
-                        <h5>Envie sua proposta para nós, que entraremos em contato!</h5><br>
-                        <input name="nameAntologia" class="nameForm mt-2" type="text" placeholder="Nome:"/><br>
-                        <input name="emailAntologia" class="emailForm mt-2" type="email" placeholder="E-mail:"/><br>
-                        <textarea name="descricaoAntologia" rows="5" class="descricaoForm mt-2" placeholder="Descreva a sua ideia:"></textarea>
-                        <button class="buttonInscrevase mt-2" style="border: none; border-radius: 30px">Enviar</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
 <!-- FOOTER -->
 <footer>
@@ -563,7 +411,7 @@
                             </a>
                             <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
                                 <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-                                <a class="dropdown-item" href="#">Antologias</a>
+                                <a class="dropdown-item" href="antologias.html">Antologias</a>
                                 <a class="dropdown-item" href="poesias.html">Poesias</a>
                             </div>
                         <li class="nav-item">
@@ -574,7 +422,7 @@
                                 Revistas
                             </a>
                             <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
-                                <a class="dropdown-item" href="revista.html">Última Edição</a>
+                                <a class="dropdown-item" href="#">Última Edição</a>
                                 <a class="dropdown-item" href="#">Inscreva-se</a>
                             </div>
                         </li>
@@ -588,10 +436,9 @@
     </div>
     </div>
 </footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
+<script src="../vendor/js/bundle.min.js"></script>
+<!-- Custom Script -->
+<script src="../book-shop/js/script.js"></script>
 </body>
 </html>
