@@ -387,6 +387,24 @@
             margin: 10px 215px;
         }
     </style>
+    <!---Limpa o form!--->
+    <script>
+        document.getElementById("formAntologia").addEventListener("submit", function(event){
+            event.preventDefault(); // Previne o comportamento padrão do form
+            // Aqui você pode adicionar o código para enviar o formulário via AJAX ou outra técnica
+
+            // Limpa os campos do formulário
+            document.getElementById("nameAntologia").value = "";
+            document.getElementById("emailAntologia").value = "";
+            document.getElementById("descricaoAntologia").value = "";
+
+            // Se desejar, exiba uma mensagem de sucesso
+            alert("Formulário enviado com sucesso!");
+
+            // Se não estiver usando AJAX para enviar o formulário, remova o preventDefault()
+            this.submit(); // Submete o formulário se for necessário
+        });
+    </script>
 </head>
 <body>
 
@@ -495,13 +513,13 @@
                     </span>
                     </div>
                 </div>
-                    <div class="container_form col-md-6">
-                        <h5>Envie sua proposta para nós, que entraremos em contato!</h5><br>
-                        <input name="nameAntologia" class="nameForm mt-2" type="text" placeholder="Nome:"/><br>
-                        <input name="emailAntologia" class="emailForm mt-2" type="email" placeholder="E-mail:"/><br>
-                        <textarea name="descricaoAntologia" rows="5" class="descricaoForm mt-2" placeholder="Descreva a sua ideia:"></textarea>
-                        <button class="buttonInscrevase mt-2" style="border: none; border-radius: 30px">Enviar</button>
-                    </div>
+                        <form id="formAntologia" class="container_form col-md-6" action="https://formspree.io/f/mvgpyply" method="post">
+                            <h5>Envie sua proposta para nós, que entraremos em contato!</h5><br>
+                        <input name="nameAntologia" id="nameAntologia" class="nameForm mt-2" type="text" placeholder="Nome:"/><br>
+                        <input name="emailAntologia" id="emailAntologia" class="emailForm mt-2" type="email" placeholder="E-mail:"/><br>
+                        <textarea name="descricaoAntologia" id="descricaoAntologia" rows="5" class="descricaoForm mt-2" placeholder="Descreva a sua ideia:"></textarea><br>
+                        <button class="buttonInscrevase mt-2 col-md-8" type="submit" value="Enviar" style="border: none; border-radius: 30px">Enviar</button>
+                        </form>
                 </div>
             </div>
         </div>
