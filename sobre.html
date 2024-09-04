@@ -17,12 +17,94 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <![endif]-->
   <style>
+    #tabsmultiplas .nav-item .nav-link.active{
+      background-color:  #1b1e21;
+      color: #FFFFFF !important;
+    }
+    .nav-item .nav-link.active:hover {
+      background-color:#A9C4BB;
+      color: #FFFFFF!important;
+    }
+    .nav-link{
+      color: white !important;
+      text-decoration: none;
+    }
     .img-circle {
       border-radius: 50%;
     }
-    .container-valores{
-      background-color: darkslategrey;
+    .container-valores {
+      background-color: #2e4a54;
       color: white;
+      padding: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .header-icon {
+      width: 40px;
+      margin-right: 8px;
+    }
+
+    .header-title {
+      color: #96811D;
+      margin-top: 4px;
+    }
+
+    /* Estilo dos itens de valores */
+    .value-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      margin-right: 20px; /* Espaço entre itens, ajuste conforme necessário */
+    }
+
+    .separator {
+      height: 40px;
+      width: 2px;
+      background-color: white;
+      border: none;
+      margin-left: 10px;
+    }
+
+    /* Ajustes para telas pequenas */
+    @media (max-width: 767px) {
+      .container-valores {
+        padding: 10px;
+      }
+
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header-icon {
+        margin-bottom: 10px;
+      }
+
+      .value-item {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0; /* Remove o espaço entre itens em dispositivos menores */
+      }
+
+      .separator {
+        display: none; /* Oculta as linhas separadoras em telas menores, opcional */
+      }
+    }
+    .col-md-9.col-lg-8.p-3 {
+      display: block !important; /* Override display: flex */
+    }
+
+    /* Estilo para telas maiores que 700 pixels */
+    @media (min-width: 700px) {
+      .col-md-9.col-lg-8.p-3 {
+        display: flex !important; /* Aplica flexbox somente em telas maiores */
+        flex-wrap: wrap !important; /* Permite a quebra de linha em telas maiores */
+      }
     }
     #livrosHeader{
       color:#ffffff;
@@ -353,49 +435,116 @@
       text-align: left;
       margin: 10px 215px;
     }
+    .imgmandiJU {
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-66%);
+      z-index: 2;
+    }
+    @media (max-width: 767.98px) {
+
+      .icons i {
+        font-size: 20px;
+        margin-left: 8px;
+      }
+    }
+    .container-contatos{
+      position: relative;
+      text-align: left;
+      margin: 10px 215px;
+    }
+    .container-footer2{
+      position: relative;
+      text-align: left;
+      margin: 10px 215px;
+    }
+    .imgmandiJU {
+      position: absolute;
+      border-radius: 50%;
+      left: 50%;
+      transform: translateX(-66%);
+      z-index: 2;
+    }
+    .logo-ativo {
+      position: relative;
+      z-index: 1;
+      height: 60%;
+    }
+    @media (max-width: 767.98px) {
+      .container-contatos {
+        position: static;
+        float: none;
+        margin: 0 10px
+      }
+      .container-footer2{
+        position: static;
+        float: none;
+        margin: 0 10px;
+      }
+      footer .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+      }
+      .imgmandiJU {
+        top: -20px;
+        border-radius: 50%;
+        width: 45%; /* Ajusta a largura para dispositivos móveis */
+        position: absolute;
+        left: 58%;
+        transform: translateX(-66%);
+        z-index: 2;
+      }
+    }
   </style>
 
 </head>
 <body>
 
 <nav class="navbar navbar-expand-lg" id="container-header">
-  <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
-    <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50"></a>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50">
+    </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" id="home" href="index.html"><i class="fa-solid fa-house"></i></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Sobre</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="livrosHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Livros
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLivros">
-          <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-          <a class="dropdown-item" href="antologias.html">Antologias</a>
-          <a class="dropdown-item" href="poesias.html">Poesias</a>
-        </div>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" id="RevistaHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Revistas
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEbook">
-          <a class="dropdown-item" href="revista.html">Última Edição</a>
-          <a class="dropdown-item" href="#">Inscreva-se</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
-      </li>
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" id="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sobre</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="livrosHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Livros
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="multiplas.html">Coleção Multipas</a></li>
+            <li><a class="dropdown-item" href="antologias.html">Antologias</a></li>
+            <li><a class="dropdown-item" href="poesias.html">Poesias</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ebooks.html">Ebooks</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="RevistaHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Revistas
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="revista.html">Última Edição</a></li>
+            <li><a class="dropdown-item" href="#">Inscreva-se</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="loja.html">Loja</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </nav>
 
@@ -406,49 +555,49 @@
     <h5 class="col-md-8 fs-4 fw-bold col-md-4">Maralheios nasceu com a proposta de dar vazão aos mares alheios. Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento.Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento.Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento</h5>
   </div>
   <div class="col-md-1"></div>
-  <div class="col-md-4 row">
-    <img style="width: 300px; margin-right: -148px;background-attachment: fixed;height: 355px;" src="img/Ativo%2025@10x.png">
-    <img class="img-circle" style="width: 285px;height: 355px; margin-right: 8px;margin-top: 55px;" src="img/Ju.png">
+  <div class="col-md-4 row position-relative mt-5">
+    <img style=";background-attachment: fixed;" class="col-6 col-sm-6 col-md-6 logo-ativo" src="img/Ativo%2025@10x.png">
+    <img   class="col-4 col-sm-5 offset-md-1 imgmandiJU" src="img/Ju.png">
   </div>
 
 </div>
-  <div class="container-valores">
-      <div style="display: flex; align-items: center;justify-content: center">
-        <img style="width: 40px; margin-right: 8px;" src="img/Ativo%2025@10x.png">
-        <h2 class="text-center mt-4" style="color: #96811D;">Nossos Valores</h2>
+<div class="container-valores">
+  <div class="header">
+    <img src="img/Ativo%2025@10x.png" alt="Valores Icon" class="header-icon">
+    <h2 class="header-title">Nossos Valores</h2>
+  </div>
+  <div class="row justify-content-center text-center">
+    <div class="col-md-9 col-lg-8 p-3 d-flex flex-wrap">
+      <div class="value-item">
+        <h5>DIVERSIDADE</h5>
+        <hr class="separator">
       </div>
-    <div class="row justify-content-center text-center">
-      <div class="col-md-9 p-3 d-flex align-items-center justify-content-between flex-wrap">
-        <div class="d-flex align-items-center ">
-          <h5>DIVERSIDADE</h5>
-          <hr style="height: 40px; width: 2px; background-color: white; border: none; margin-left: 10px;">
-        </div>
-        <div class="d-flex align-items-center ">
-          <h5>PLURALIDADE DE NARRATIVAS</h5>
-          <hr style="height: 40px; width: 2px; background-color: white; border: none; margin-left: 10px;">
-        </div>
-        <div class="d-flex align-items-center ">
-          <h5>TRANSFORMAÇÃO SOCIAL</h5>
-          <hr style="height: 40px; width: 2px; background-color: white; border: none; margin-left: 10px;">
-        </div>
-        <div class="d-flex align-items-center ">
-          <h5>FEMINISMO</h5>
-          <hr style="height: 40px; width: 2px; background-color: white; border: none; margin-left: 10px;">
-        </div>
-        <div class="d-flex align-items-center">
-          <h5>REPRESENTATIVIDADE</h5>
-        </div>
+      <div class="value-item">
+        <h5>PLURALIDADE DE NARRATIVAS</h5>
+        <hr class="separator">
+      </div>
+      <div class="value-item">
+        <h5>TRANSFORMAÇÃO SOCIAL</h5>
+        <hr class="separator">
+      </div>
+      <div class="value-item">
+        <h5>FEMINISMO</h5>
+        <hr class="separator">
+      </div>
+      <div class="value-item">
+        <h5>REPRESENTATIVIDADE</h5>
       </div>
     </div>
-
   </div>
-  <div class="container-equipe">
+</div>
+
+<div class="container-equipe">
     <div style="display: flex; align-items: center;justify-content: center">
       <img style="width: 40px; margin-right: 8px;" src="img/Ativo%2025@10x.png">
       <h2 class="text-center mt-4" style="color: #96811D;">Nossa Equipe</h2>
     </div>
     <div class="equipe-cards col-md-12 row justify-content-center text-center">
-      <div class="col-md-2 me-4">
+      <div class="col-md-2 me-4 col-sm-2 col-8">
           <img class="img-circle" style="width: 210px;" src="img/Mandi.jpeg">
           <div class="livros mt-2">
             <span class="tituloLivro">MANDI MOREIRA</span><br>
@@ -457,7 +606,7 @@
               Desde pequena se interessa pela Literatura, em especial pela Poesia. E, para além da escrita, trabalha com pintura, fotografia e ilustrações, como busca de autoconhecimento, memória afetiva e resgate da ancestralidade. </p></h4>
           </div>
       </div>
-      <div class="col-md-2 me-4">
+      <div class="col-md-2 me-4 col-sm-2 col-8">
           <img class="img-circle" style="width: 210px;" src="img/Ju.png">
           <div class="livros mt-2">
             <span class="tituloLivro">JU LOPSE</span><br>
@@ -465,7 +614,7 @@
             <h4 class="hastagLivro">Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p></h4>
           </div>
       </div>
-      <div class="col-md-2 me-4">
+      <div class="col-md-2 me-4 col-sm-2 col-8">
           <img class="img-circle" style="width: 210px;" src="img/Artur.jpeg">
           <div class="livros mt-2">
             <span class="tituloLivro">ARTUR GROCHOCKI</span><br>
@@ -479,11 +628,11 @@
   <!-- FOOTER -->
 <footer>
   <div class="container-footer1">
-    <div class="row align-items-center justify-content-between">
-      <div class="col-3" style="margin-left: 80px;">
+    <div class="row align-items-center justify-content-between container-fluid">
+      <div class="col-1 col-md-3 col-sm-2" style="margin-left: 80px;">
         <img style="width: 110px;"  src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png">
       </div>
-      <div class="col-4">
+      <div class="col-5 col-md-4 col-sm-2">
         <div class="icons">
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-whatsapp"></i>
@@ -495,62 +644,65 @@
     <hr style="border-top: 5px solid #0f0f0f;width: 75%;margin: 0 auto">
   </div>
 
-  <div class="container-contatos" style="margin-bottom: 40px">
+  <div class="container-contatos mt-3" style="margin-bottom: 40px">
     <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
     <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
       <div class="col-md-6 align-items-center justify-content-between">
         <h4><i class="fa-regular fa-envelope" style="margin-right: 9px;"></i>
           contato@maralheios.com</h4>
       </div>
-      <!---div class="col-md-6 d-flex justify-content-between align-items-center">
-          <h4>Inscreva-se para as novidades</h4>
+      <div class="col-md-6 d-flex justify-content-between align-items-center">
+        <h4>Inscreva-se para as novidades</h4>
       </div>
       <div class="row">
-          <div class="col-md-6 offset-md-6" style="margin-left: 51%">
-              <input style="width: 280px; margin-top: 10px; border: none; border-radius: 10px;'" type="text">
-          </div>
-      </div!--->
+        <div class="col-md-6 offset-md-6">
+          <input style="width: 280px; margin-top: 10px; border: none; border-radius: 10px;'" type="text">
+        </div>
+      </div>
     </div>
   </div>
-  <div class="container-footer2">
+
+  <div class="container-footer2 col-md-12 col-sm-12 col-lg-12 mt-3">
     <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
-      <div class="col-6">
-        <!---h3>Política de Privacidade</h3!--->
+      <div class="col-12 col-md-6">
+        <h3>Política de Privacidade</h3>
       </div>
-      <div class="col-6">
+      <div class="col-12 col-md-6">
         <nav class="navbar navbar-expand-lg">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Sobre</a>
-            </li>
-            <li class="nav-item dropdown dropup">
-              <a class="nav-link dropdown-toggle" id="livrosFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Livros
-              </a>
-              <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
-                <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-                <a class="dropdown-item" href="antologias.html">Antologias</a>
-                <a class="dropdown-item" href="poesias.html">Poesias</a>
-              </div>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
-            </li>
-            <li class="nav-item dropdown dropup">
-              <a class="nav-link dropdown-toggle" id="RevistaFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Revistas
-              </a>
-              <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
-                <a class="dropdown-item" href="revista.html">Última Edição</a>
-                <a class="dropdown-item" href="#">Inscreva-se</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
-            </li>
-          </ul>
+          <div class="container-fluid-footer">
+            <ul class="navbar-nav footer">
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i></a>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+              </li>
+              <li class="nav-item ms-2 dropdown dropup">
+                <a class="nav-link dropdown-toggle" id="livrosFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Livros
+                </a>
+                <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
+                  <a class="dropdown-item" href="#">Coleção Multipas</a>
+                  <a class="dropdown-item" href="antologias.html">Antologias</a>
+                  <a class="dropdown-item" href="poesias.html">Poesias</a>
+                </div>
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
+              </li>
+              <li class="nav-item ms-2 dropdown dropup">
+                <a class="nav-link dropdown-toggle" id="RevistaFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Revistas
+                </a>
+                <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
+                  <a class="dropdown-item" href="revista.html">Última Edição</a>
+                  <a class="dropdown-item" href="#">Inscreva-se</a>
+                </div>
+              </li>
+              <li class="nav-item ms-2">
+                <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </div>

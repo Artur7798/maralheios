@@ -133,6 +133,14 @@
         .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
             color:#FFFFFF; !important;
         }
+        .navbar-nav .nav-link.active:hover {
+            background-color: #A9C4BB;
+            color: #ffffff !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: white !important;
+        }
 
         /* Style the album container */
         .album {
@@ -386,6 +394,57 @@
             text-align: left;
             margin: 10px 215px;
         }
+        @media (max-width: 767.98px) {
+            .navbar-nav .nav-item {
+                text-align: center;
+            }
+
+            .navbar-nav .dropdown-menu {
+                position: static;
+                float: none;
+            }
+
+            .navbar-brand img {
+                width: 50px;
+                height: 40px;
+            }
+
+            .buttonInscrevase {
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        @media (max-width: 767.98px) {
+            .container-contatos {
+                position: static;
+                float: none;
+                margin: 0 10px
+            }
+            .container-footer2{
+                position: static;
+                float: none;
+                margin: 0 10px;
+            }
+            footer .navbar-nav {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+            .box-colecao {
+                top: -20px;
+                width: 55%; /* Ajusta a largura para dispositivos móveis */
+                position: absolute;
+                left: 65%;
+                transform: translateX(-66%);
+                z-index: 2;
+            }
+
+            .buttonInscrevase {
+                width: 100%; /* O botão ocupará toda a largura disponível */
+                margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
+            }
+
+        }
     </style>
     <!---Limpa o form!--->
     <script>
@@ -410,43 +469,48 @@
 
 <!-- START HEADER NAVIGATION -->
 <nav class="navbar navbar-expand-lg" id="container-header">
-    <div class="collapse navbar-collapse container-fluid" id="navbarSupportedContent">
-        <a class="navbar-brand" href="index.html"><img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50"></a>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50">
+        </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" id="home" href="index.html"><i class="fa-solid fa-house"></i></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="livrosHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Livros
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkLivros">
-                    <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-                    <a class="dropdown-item" href="#">Antologias</a>
-                    <a class="dropdown-item" href="poesias.html">Poesias</a>
-                </div>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="RevistaHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Revistas
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLinkEbook">
-                    <a class="dropdown-item" href="revista.html">Última Edição</a>
-                    <a class="dropdown-item" href="#">Inscreva-se</a>
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
-            </li>
-        </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" id="home" href="index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="livrosHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Livros
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="multiplas.html">Coleção Multipas</a></li>
+                        <li><a class="dropdown-item" href="#">Antologias</a></li>
+                        <li><a class="dropdown-item" href="poesias.html">Poesias</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ebooks.html">Ebooks</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="RevistaHeader" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Revistas
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="revista.html">Última Edição</a></li>
+                        <li><a class="dropdown-item" href="#">Inscreva-se</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="loja.html">Loja</a>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
 <!-- END HEADER NAVIGATION -->
@@ -504,17 +568,16 @@
         <div class="row mt-5">
             <div class="col-md-12">
                 <div class="row">
-                <div class="container-info-antologia col-md-6">
+                    <div class="container-info-antologia col-md-6 d-flex flex-column justify-content-center">
                     <h2>Quer organizar uma antologia?</h2>
-                    <div class="col-md-6">
-                    <span>  Inscreva a sua ideia e conte com a nossa equipe para estruturar e dar vida à sua publicação!
+                    <span class="text-center">  Inscreva a sua ideia e conte com a nossa equipe para estruturar e dar vida à sua publicação!
                             <br>
                             Nós enviaremos um orçamento incluso desde a seleção de autores, até a etapa de impressão e distribuição. E você pode optar por financiamento coletivo para cobrir os custos!
                     </span>
                     </div>
-                </div>
+
                         <form id="formAntologia" class="container_form col-md-6" action="https://formspree.io/f/mvgpyply" method="post">
-                            <h5>Envie sua proposta para nós, que entraremos em contato!</h5><br>
+                        <h5 class="text-center">Envie sua proposta para nós, que entraremos em contato!</h5><br>
                         <input name="nameAntologia" id="nameAntologia" class="nameForm mt-2" type="text" placeholder="Nome:"/><br>
                         <input name="emailAntologia" id="emailAntologia" class="emailForm mt-2" type="email" placeholder="E-mail:"/><br>
                         <textarea name="descricaoAntologia" id="descricaoAntologia" rows="5" class="descricaoForm mt-2" placeholder="Descreva a sua ideia:"></textarea><br>
@@ -528,11 +591,11 @@
 <!-- FOOTER -->
 <footer>
     <div class="container-footer1">
-        <div class="row align-items-center justify-content-between">
-            <div class="col-3" style="margin-left: 80px;">
+        <div class="row align-items-center justify-content-between container-fluid">
+            <div class="col-1 col-md-3 col-sm-2" style="margin-left: 80px;">
                 <img style="width: 110px;"  src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png">
             </div>
-            <div class="col-4">
+            <div class="col-5 col-md-4 col-sm-2">
                 <div class="icons">
                     <i class="fa-brands fa-instagram"></i>
                     <i class="fa-brands fa-whatsapp"></i>
@@ -544,62 +607,65 @@
         <hr style="border-top: 5px solid #0f0f0f;width: 75%;margin: 0 auto">
     </div>
 
-    <div class="container-contatos" style="margin-bottom: 40px">
+    <div class="container-contatos mt-3" style="margin-bottom: 40px">
         <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
         <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
             <div class="col-md-6 align-items-center justify-content-between">
                 <h4><i class="fa-regular fa-envelope" style="margin-right: 9px;"></i>
                     contato@maralheios.com</h4>
             </div>
-            <!---div class="col-md-6 d-flex justify-content-between align-items-center">
+            <div class="col-md-6 d-flex justify-content-between align-items-center">
                 <h4>Inscreva-se para as novidades</h4>
             </div>
             <div class="row">
-                <div class="col-md-6 offset-md-6" style="margin-left: 51%">
+                <div class="col-md-6 offset-md-6">
                     <input style="width: 280px; margin-top: 10px; border: none; border-radius: 10px;'" type="text">
                 </div>
-            </div!--->
+            </div>
         </div>
     </div>
-    <div class="container-footer2">
+
+    <div class="container-footer2 col-md-12 col-sm-12 col-lg-12 mt-3">
         <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
-            <div class="col-6">
-                <!---h3>Política de Privacidade</h3!--->
+            <div class="col-12 col-md-6">
+                <h3>Política de Privacidade</h3>
             </div>
-            <div class="col-6">
+            <div class="col-12 col-md-6">
                 <nav class="navbar navbar-expand-lg">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
-                        </li>
-                        <li class="nav-item dropdown dropup">
-                            <a class="nav-link dropdown-toggle" id="livrosFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Livros
-                            </a>
-                            <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
-                                <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
-                                <a class="dropdown-item" href="#">Antologias</a>
-                                <a class="dropdown-item" href="poesias.html">Poesias</a>
-                            </div>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
-                        </li>
-                        <li class="nav-item dropdown dropup">
-                            <a class="nav-link dropdown-toggle" id="RevistaFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Revistas
-                            </a>
-                            <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
-                                <a class="dropdown-item" href="revista.html">Última Edição</a>
-                                <a class="dropdown-item" href="#">Inscreva-se</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
-                        </li>
-                    </ul>
+                    <div class="container-fluid-footer">
+                        <ul class="navbar-nav footer">
+                            <li class="nav-item ms-2">
+                                <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i></a>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link active" aria-current="page" href="sobre.html">Sobre</a>
+                            </li>
+                            <li class="nav-item ms-2 dropdown dropup">
+                                <a class="nav-link dropdown-toggle" id="livrosFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Livros
+                                </a>
+                                <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkLivros">
+                                    <a class="dropdown-item" href="multiplas.html">Coleção Multipas</a>
+                                    <a class="dropdown-item" href="#">Antologias</a>
+                                    <a class="dropdown-item" href="poesias.html">Poesias</a>
+                                </div>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link active" aria-current="page" href="ebooks.html">Ebooks</a>
+                            </li>
+                            <li class="nav-item ms-2 dropdown dropup">
+                                <a class="nav-link dropdown-toggle" id="RevistaFooter" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Revistas
+                                </a>
+                                <div class="dropdown-menu footer" aria-labelledby="navbarDropdownMenuLinkEbook">
+                                    <a class="dropdown-item" href="revista.html">Última Edição</a>
+                                    <a class="dropdown-item" href="#">Inscreva-se</a>
+                                </div>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <a class="nav-link active" aria-current="page" href="loja.html">Loja</a>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </div>
