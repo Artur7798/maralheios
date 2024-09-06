@@ -17,6 +17,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <![endif]-->
   <style>
+    @media (max-width: 767px) {
+      .footer-logo{
+        margin-left: 50px;
+      }
+    }
     #tabsmultiplas .nav-item .nav-link.active{
       background-color:  #1b1e21;
       color: #FFFFFF !important;
@@ -463,13 +468,17 @@
       position: absolute;
       border-radius: 50%;
       left: 50%;
+      top: -120px;
       transform: translateX(-66%);
       z-index: 2;
     }
     .logo-ativo {
       position: relative;
       z-index: 1;
-      height: 60%;
+      height: 55%;
+    }
+    .box-img{
+      left: 15%;
     }
     @media (max-width: 767.98px) {
       .container-contatos {
@@ -487,15 +496,6 @@
         flex-direction: row;
         justify-content: flex-end;
       }
-      .imgmandiJU {
-        top: -20px;
-        border-radius: 50%;
-        width: 45%; /* Ajusta a largura para dispositivos móveis */
-        position: absolute;
-        left: 58%;
-        transform: translateX(-66%);
-        z-index: 2;
-      }
     }
   </style>
 
@@ -505,7 +505,7 @@
 <nav class="navbar navbar-expand-lg" id="container-header">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">
-      <img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50">
+      <img class="img-logo" src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png" alt="A desFrutada" height="70">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -555,9 +555,9 @@
     <h5 class="col-md-8 fs-4 fw-bold col-md-4">Maralheios nasceu com a proposta de dar vazão aos mares alheios. Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento.Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento.Em meio a pandemia COVID-19, a editora inicia com a proposta do livro “Poliamar: versos de navegação” de Mandi Moreira  e, a partir desse momento</h5>
   </div>
   <div class="col-md-1"></div>
-  <div class="col-md-4 row position-relative mt-5">
-    <img style=";background-attachment: fixed;" class="col-6 col-sm-6 col-md-6 logo-ativo" src="img/Ativo%2025@10x.png">
-    <img   class="col-4 col-sm-5 offset-md-1 imgmandiJU" src="img/Ju.png">
+  <div class="col-md-4 row position-relative mt-5 box-img">
+    <img style="background-attachment: fixed;" class="col-6 col-sm-6 col-md-5 logo-ativo" src="img/Cópia%20de%20Ativo%2025@10x.png">
+    <img   class="col-5 col-sm-8 offset-md-1 imgmandiJU" src="img/Foto%20feira%20brita.png">
   </div>
 
 </div>
@@ -629,15 +629,23 @@
 <footer>
   <div class="container-footer1">
     <div class="row align-items-center justify-content-between container-fluid">
-      <div class="col-1 col-md-3 col-sm-2" style="margin-left: 80px;">
+      <div class="footer-logo col-1 col-md-4 col-sm-2">
         <img style="width: 110px;"  src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png">
       </div>
       <div class="col-5 col-md-4 col-sm-2">
         <div class="icons">
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-whatsapp"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-threads"></i>
+          <a href="instagram.com/maralheios " target="_blank">
+            <img class="img-circle" src="img/Ícone%20%20Insta.png" alt="A desFrutada" height="30">
+          </a>
+          <a href="https://wa.me/c/555192644313 " target="_blank">
+            <img class="img-circle" src="img/Ícone%20Face.png" alt="A desFrutada" height="30">
+          </a>
+          <a href="https://www.linkedin.com/company/editora-maralheios/ " target="_blank">
+            <img class="img-circle" src="img/Ícone%20Linkedin.png" alt="A desFrutada" height="30">
+          </a>
+          <a href="https://www.threads.net/@maralheios " target="_blank">
+            <img class="img-circle" src="img/Ícone%20Threads.png" alt="A desFrutada" height="30">
+          </a>
         </div>
       </div>
     </div>
@@ -645,10 +653,14 @@
   </div>
 
   <div class="container-contatos mt-3" style="margin-bottom: 40px">
-    <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
+    <h4><a href="" target="_blank">
+      <img class="img-circle" src="img/Pin.png" alt="Pin localização" height="50">
+    </a>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
     <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
       <div class="col-md-6 align-items-center justify-content-between">
-        <h4><i class="fa-regular fa-envelope" style="margin-right: 9px;"></i>
+        <h4><a href="" target="_blank">
+          <img class="img-circle" src="img/Ícone%20email.png" alt="Email a Desfrutada" height="50">
+        </a>
           contato@maralheios.com</h4>
       </div>
       <div class="col-md-6 d-flex justify-content-between align-items-center">

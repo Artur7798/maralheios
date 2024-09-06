@@ -21,8 +21,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <style>
+        @media (max-width: 767px) {
+            .footer-logo{
+                margin-left: 50px;
+            }
+            .box-img-multiplas{
+                top: 0px !important;
+            }
+        }
+        .box-img-multiplas{
+            position: relative;
+            top: -90px;
+        }
         #tabsmultiplas .nav-item .nav-link.active{
-            background-color:  #1b1e21;
+            background-color:  #2d4955;
             color: #FFFFFF !important;
         }
         .nav-item .nav-link.active:hover {
@@ -88,10 +100,20 @@
                 float: none;
             }
         }
+        .descritivo {
+            color: black;
+            font-size: 15px;
+            text-align: justify;
 
+        }
         @media (min-width: 768px) {
             .navbar-nav {
                 margin-left: auto;
+            }
+            .descritivo {
+                color: black !important;
+                font-size: 15px !important;
+                text-align: justify;
             }
         }
         .buttonInscrevase{
@@ -101,15 +123,17 @@
         .tituloLivro autoria{
             color: #06171F;
             font-size: 18px;
+
+        }
+        .subTitulo{
+            font-size: 18px;
         }
         .tituloLivro{
+            font-weight: bold;
             font-size: 20px;
+
         }
         .biografia{
-            color: #96811D;
-            font-size: 15px;
-        }
-        .descritivo{
             color: #96811D;
             font-size: 15px;
         }
@@ -187,14 +211,8 @@
             font-size: 24px;
             margin-left: 10px;
         }
-        .logo-ativo {
-            position: relative;
-            z-index: 1;
-            height: 60% ;
-        }
 
         @media (max-width: 767.98px) {
-
             .icons i {
                 font-size: 20px;
                 margin-left: 8px;
@@ -213,15 +231,17 @@
         .box-colecao {
             position: absolute;
             left: 50%;
+            width: 295px;
+            top: 40px;
             transform: translateX(-66%);
             z-index: 2;
         }
-        .logo-ativo {
-            position: relative;
-            z-index: 1;
-
-        }
         @media (max-width: 767.98px) {
+            .logo-ativo {
+                position: relative;
+                z-index: 1;
+                height: 60% !important;
+            }
             .container-contatos {
                 position: static;
                 float: none;
@@ -239,9 +259,9 @@
             }
             .box-colecao {
                 top: -20px;
-                width: 55%; /* Ajusta a largura para dispositivos móveis */
+                width: 45%; !important;
                 position: absolute;
-                left: 65%;
+                left: 60%;
                 transform: translateX(-66%);
                 z-index: 2;
             }
@@ -250,6 +270,12 @@
                 width: 100%; /* O botão ocupará toda a largura disponível */
                 margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
             }
+
+        }
+        .logo-ativo {
+            position: relative;
+            z-index: 1;
+            height: 366px;
 
         }
     </style>
@@ -261,7 +287,7 @@
 <nav class="navbar navbar-expand-lg" id="container-header">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
-            <img class="img-circle" src="img/01- LOGO PRINCIPAL.png" alt="A desFrutada" width="70" height="50">
+            <img class="img-logo" src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png" alt="A desFrutada" height="70">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -322,10 +348,10 @@
                             <div class="display-4 fw-bold col-md-8 row">
                                 <h3 class="col-md-8 fs-4 fw-bold col-md-4">"Múltiplas" é uma coleção composta por quatro livros de autoras brasileiras contemporâneas, classificados no prêmio Carolina Maria de Jesus, do Ministério da Cultura, em 2023.<br><br>Em comum, os livros trazem a multiplicidade do que é ser mulher no Brasil atual. Através de textos curtos, trazem histórias, memórias, significados e papéis desempenhados por elas.</h3>
                             </div>
-                            <div class="col-md-4 row position-relative mt-5">
-                                <img style="background-attachment: fixed;" class="col-6 col-sm-6 col-md-6 logo-ativo" src="img/Ativo%2025@10x.png">
-                                <img class="col-4 col-sm-6 offset-md-1 box-colecao" src="img/Box%20Coleção.png">
-                                <button class="buttonInscrevase mt-5 col-sm-12 col-2 col-md-7" style="border: none; border-radius: 30px">COMPRAR<br>COLEÇÃO</button>
+                            <div class="col-md-4 row position-relative box-img-multiplas">
+                                <img style="background-attachment: fixed;" class="col-6 col-sm-6 col-md-8 logo-ativo" src="img/Cópia%20de%20Ativo%2025@10x.png">
+                                <img class="col-4 col-sm-6 offset-md-3 box-colecao" style="" src="img/Box%20Coleção%20Multiplas.png">
+                                <button class="buttonInscrevase mt-5 col-sm-12 col-2 col-md-5" style="border: none; border-radius: 30px">COMPRAR</button>
                             </div>
 
                         </div>
@@ -384,28 +410,28 @@
                                 <div class="tab-pane fade" id="autoras" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="equipe-cards col-md-12 mt-5 row justify-content-center text-center">
                                             <div class="col-md-2 me-4">
-                                                <img class="img-circle" style="width: 210px;" src="img/Mandi.jpeg">
+                                                <img class="img-circle" style="width: 210px;" src="img/Foto%20Isa_site.png">
                                                 <div class="livros mt-2">
                                                     <span class="tituloLivro"> Isabela Mendeleh</span><br>
                                                     <h4 class="biografia mt-5">BIO</h4>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 me-4">
-                                                <img class="img-circle" style="width: 210px;" src="img/Mandi.jpeg">
+                                                <img class="img-circle" style="width: 210px;" src="img/Foto%20Mal_site.png">
                                                 <div class="livros mt-2">
                                                     <span class="tituloLivro">Malvina de Castro Rosa</span><br>
                                                     <h4 class="biografia mt-5">BIO</h4>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 me-4">
-                                                <img class="img-circle" style="width: 210px;" src="img/Ju.png">
+                                                <img class="img-circle" style="width: 210px;" src="img/Foto%20Ju_site.png">
                                                 <div class="livros mt-2">
                                                     <span class="tituloLivro">JU LOPSE</span><br>
                                                     <h4 class="biografia mt-5">Escritora e uma das idealizadoras da revista virtual <strong>A desFrutada</strong>. É bacharel em Musicoterapia, pela UNESPAR, e especialista em Liderança, Coaching e Gestão de Pessoas, pelo SENAC RS. Publicou, em 2021, “Novas sobre ela”, e atua como editora independente na Maralheios, editando o livro “Poliamar”, de Mandi Moreira, em 2021.</p></h4>
                                                 </div>
                                             </div>
                                             <div class="col-md-2 me-4">
-                                                <img class="img-circle" style="width: 210px;" src="img/Artur.jpeg">
+                                                <img class="img-circle" style="width: 210px;" src="img/Foto%20Gene_site.png">
                                                 <div class="livros mt-2">
                                                     <span class="tituloLivro">Geneviève Faé</span><br>
                                                     <h4 class="biografia mt-5">BIO</h4>
@@ -416,56 +442,56 @@
                                 <div class="tab-pane fade" id="detalhes" role="tabpanel" aria-labelledby="profile-tab">
                                         <div class="row">
                                             <div class="row justify-content-center text-center">
-                                                <div class="col-md-2 p-3 me-4">
+                                                <div class="col-md-2 col-sm-12 col-8 p-3 me-4">
                                                     <div class="justify-content-between align-items-center text-center">
                                                         <div class="livros mt-2">
                                                             <span class="tituloLivro">um livro de ausências</span><br>
-                                                            <span class="autoria">ou tudo que sinto me tem</span><br>
+                                                            <span class="subTitulo">ou tudo que sinto me tem</span><br>
                                                             <h4 class="descritivo mt-5">AUTORA: Isabela Mendeleh<br>
                                                                 ISBN: 9786598242633<br>
                                                                 ANO: 2024<br>
-                                                                GÊNERO: PROSA POÉTICA<br>
+                                                                GÊNERO: PROSA POÉTICA<br><br>
                                                                 SINOPSE: A prosa poética de Isabela Mendeleh, abre uma fresta crua, com as dores e alegrias das relações e memórias pelo decorrer do tempo. </h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 p-3 me-4">
+                                                <div class="col-md-2 col-sm-12 col-8 p-3 me-4">
                                                     <div class="justify-content-between align-items-center text-center">
                                                         <div class="livros mt-2">
                                                             <span class="tituloLivro">Em nós</span><br>
-                                                            <span class="autoria"></span><br>
+                                                            <span class="subTitulo"></span><br>
                                                             <h4 class="descritivo mt-5">AUTORA: Malvina de Castro Rosa<br>
                                                                 ISBN:9786598242626<br>
                                                                 ANO: 2024<br>
-                                                                GÊNERO: CONTOS<br>
+                                                                GÊNERO: CONTOS<br><br>
                                                                 SINOPSE: Os contos de Malvina Rosa, narram situações cotidianas, dramáticas, divertidas, tristes, esperançosas, de diversas mulheres.</h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 p-3 me-4">
+                                                <div class="col-md-2 col-sm-12 col-8 p-3 me-4">
                                                     <div class="justify-content-between align-items-center text-center">
                                                         <div class="livros mt-2">
                                                             <span class="tituloLivro">Eutimologia</span><br>
-                                                            <span class="autoria"></span><br>
+                                                            <span class="subTitulo"></span><br>
                                                             <h4 class="descritivo mt-5">AUTORA: Ju Lopse<br>
                                                                 ISBN:9786598242640<br>
                                                                 ANO: 2024<br>
-                                                                GÊNERO: POESIA<br>
+                                                                GÊNERO: POESIA<br><br>
                                                                 SINOPSE: Nos versos de Ju Lopse, cada poema é um significado, motivado pela sua origem etimológica tanto quanto pelas sensações evocadas em cada substantivo, adjetivo ou verbo.</h4>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-2 p-3 me-4">
+                                                <div class="col-md-2 col-sm-12 col-8 p-3 me-4">
                                                     <div class="justify-content-between align-items-center text-center">
                                                         <div class="livros mt-2">
                                                             <div class="row">
                                                             <h5 class="tituloLivro">Vem comigo que no caminho te explico </h5><span>Crônicas da Maternidade Real</span><br>
                                                             </div>
-                                                            <h4 class="descritivo mt-5">AUTORA: Geneviève Faé<br>
+                                                            <h4 class="descritivo mt-4">AUTORA: Geneviève Faé<br>
                                                                 ISBN:9786598242619<br>
                                                                 ANO: 2024<br>
-                                                                GÊNERO: CRÔNICAS<br>
-                                                                SINOPSE:As crônicas de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.</h4>
+                                                                GÊNERO: CRÔNICAS<br><br>
+                                                                SINOPSE: As crônicas de Geneviève Faé, apresenta-se a perplexidade perante a maternidade. Seja na relação com o filho ou com a sociedade que cobra tanto das mães, é um percurso cheio de surpresas e humor.</h4>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -488,15 +514,23 @@
 <footer>
     <div class="container-footer1">
         <div class="row align-items-center justify-content-between container-fluid">
-            <div class="col-1 col-md-3 col-sm-2" style="margin-left: 80px;">
+            <div class="footer-logo col-1 col-md-4 col-sm-2">
                 <img style="width: 110px;"  src="img/02-LOGO%20SECUNDÁRIO_PARA%20DOCS.png">
             </div>
             <div class="col-5 col-md-4 col-sm-2">
                 <div class="icons">
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-threads"></i>
+                    <a href="instagram.com/maralheios " target="_blank">
+                        <img class="img-circle" src="img/Ícone%20%20Insta.png" alt="A desFrutada" height="30">
+                    </a>
+                    <a href="https://wa.me/c/555192644313 " target="_blank">
+                        <img class="img-circle" src="img/Ícone%20Face.png" alt="A desFrutada" height="30">
+                    </a>
+                    <a href="https://www.linkedin.com/company/editora-maralheios/ " target="_blank">
+                        <img class="img-circle" src="img/Ícone%20Linkedin.png" alt="A desFrutada" height="30">
+                    </a>
+                    <a href="https://www.threads.net/@maralheios " target="_blank">
+                        <img class="img-circle" src="img/Ícone%20Threads.png" alt="A desFrutada" height="30">
+                    </a>
                 </div>
             </div>
         </div>
@@ -504,10 +538,14 @@
     </div>
 
     <div class="container-contatos mt-3" style="margin-bottom: 40px">
-        <h4><i class="fa-solid fa-location-dot" style="margin-right: 20px;"></i>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
+        <h4><a href="" target="_blank">
+            <img class="img-circle" src="img/Pin.png" alt="Pin localização" height="50">
+        </a>Rua São Joaquim, nº 739/ 04, Bairro Estância Velha, Canoas - RS</h4>
         <div class="row align-items-center justify-content-between" style="margin-bottom: -19px;">
             <div class="col-md-6 align-items-center justify-content-between">
-                <h4><i class="fa-regular fa-envelope" style="margin-right: 9px;"></i>
+                <h4><a href="" target="_blank">
+                    <img class="img-circle" src="img/Ícone%20email.png" alt="Email a Desfrutada" height="50">
+                </a>
                     contato@maralheios.com</h4>
             </div>
             <div class="col-md-6 d-flex justify-content-between align-items-center">
