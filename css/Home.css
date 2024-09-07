@@ -1,56 +1,167 @@
-body {
-    padding-top: 0px;
+/* sobre */
+#tabsmultiplas .nav-item .nav-link.active{
+    background-color:  #1b1e21;
+    color: #FFFFFF !important;
 }
-.starter-template {
-    padding: 40px 15px;
-    text-align: center;
+.nav-item .nav-link.active:hover {
+    background-color:#A9C4BB;
+    color: #FFFFFF!important;
 }
-.marketing .col-lg-4 {
+.nav-link{
+    color: white !important;
+    text-decoration: none;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.container-valores {
+    background-color: #2e4a54;
+    color: white;
+    padding: 20px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 20px;
-    text-align: center;
 }
-.marketing h2 {
-    font-weight: 400;
+
+.header-icon {
+    width: 40px;
+    margin-right: 8px;
 }
-.marketing .col-lg-4 p {
-    margin-right: 10px;
+
+.header-title {
+    color: #96811D;
+    margin-top: 4px;
+}
+
+/* Estilo dos itens de valores */
+.value-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-right: 20px; /* Espaço entre itens, ajuste conforme necessário */
+}
+
+.separator {
+    height: 40px;
+    width: 2px;
+    background-color: white;
+    border: none;
     margin-left: 10px;
 }
 
-.carousel {
-    height: 500px;
-    margin-bottom: 60px;
+/* Ajustes para telas pequenas */
+@media (max-width: 767px) {
+    .container-valores {
+        padding: 10px;
+    }
+
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-icon {
+        margin-bottom: 10px;
+    }
+
+    .value-item {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0; /* Remove o espaço entre itens em dispositivos menores */
+    }
+
+    .separator {
+        display: none; /* Oculta as linhas separadoras em telas menores, opcional */
+    }
+}
+.col-md-9.col-lg-8.p-3 {
+    display: block !important; /* Override display: flex */
+}
+
+/* Estilo para telas maiores que 700 pixels */
+@media (min-width: 700px) {
+    .col-md-9.col-lg-8.p-3 {
+        display: flex !important; /* Aplica flexbox somente em telas maiores */
+        flex-wrap: wrap !important; /* Permite a quebra de linha em telas maiores */
+    }
+}
+#livrosHeader{
+    color:#ffffff;
+}
+#livrosFooter{
+    color:#ffffff;
+}
+#RevistaHeader{
+    color:#ffffff;
+}
+#RevistaFooter{
+    color:#ffffff;
+}
+.dropdown-item{
+    color: #ffffff;
+}
+footer{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+livrosFooter{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+}
+.dropdown-menu{
+    background-color:#A9C4BB;
+}
+.dropdown-menu.footer{
+    background-color: #96811D;
+}
+
+.tituloLivro autoria{
+    color: #06171F;
+    font-size: 18px;
+}
+.tituloLivro{
+    font-size: 20px;
+}
+.hastagLivro{
+    color: #96811D;
+    font-size: 15px;
+}
+.livros{
+    font-family: cabin;
+}
+.dropdown-item{
+    color: #ffffff;
+}
+
+/*NEW*/
+
+#container-header{
+    background-color: #A9C4BB;
+    font-family:  cabin negrito;
     width: 100%;
 }
-.carousel-caption {
-    z-index: 10; /* Since positioning the image, we need to help out the caption */
+.navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
+    color:#FFFFFF; !important;
 }
-footer {
-    background-color: #87000D; /* Red wine color */
-    padding: 30px 0;
+@media (max-width: 767px) {
+    margin: 50px 10%;
 }
-
-.footer-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    flex: 0 0 30%;
-    text-align: center;
+body{
+    margin: 0;
+    overflow-x: hidden;
 }
 
 h4 {
     font-size: 24px;
     margin-bottom: 15px;
     color: #fff;
-}
-
-p {
-    color: #fff;
-    margin-bottom: 20px;
 }
 #apresentacao p{
     color: black;
@@ -77,225 +188,993 @@ li {
     margin-bottom: 10px;
 }
 
+.carousel-item img {
+    max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+@media (max-width: 767px) {
+    .container-footer1 {
+        position: relative;
+        text-align: center;
+        margin-top: 20px; /* Ajuste conforme necessário */
+    }
+
+    .icons i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+
+        .icons i {
+            font-size: 20px;
+            margin-left: 8px;
+        }
+
+        .container img {
+            width: 90px; /* Ajuste conforme necessário para telas menores */
+        }
+    }
+    .container-contatos {
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+
+    .container-footer2 {
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+
+    .imgmandiJU {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-66%);
+        z-index: 2;
+    }
+
+    @media (max-width: 767.98px) {
+
+        .icons i {
+            font-size: 20px;
+            margin-left: 8px;
+        }
+    }
+    .container-contatos {
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+
+    .container-footer2 {
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+
+    .imgmandiJU {
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: -120px;
+        transform: translateX(-66%);
+        z-index: 2;
+    }
+
+    .logo-ativo {
+        position: relative;
+        z-index: 1;
+        height: 55%;
+    }
+
+    .box-img {
+        left: 15%;
+    }
+
+    @media (max-width: 767.98px) {
+        .container-contatos {
+            position: static;
+            float: none;
+            margin: 0 10px
+        }
+
+        .container-footer2 {
+            position: static;
+            float: none;
+            margin: 0 10px;
+        }
+
+        footer .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+}
+/* antologias */
+.container-info-antologia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.container_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+    padding: 20px;
+    width: 640px;
+    border-radius: 50px;
+    border: 5px white solid;
+}
+.container_form input,
+.container_form textarea {
+    width: 70%;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+.container_form textarea {
+    width: 70%;
+    border-radius: 30px;
+    padding-left: 10px;
+}
+.container_form h5 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+.dropdown-item{
+    color: #ffffff;
+}
+footer{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+livrosFooter{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+}
+.dropdown-menu{
+    background-color:#A9C4BB;
+}
+.dropdown-menu.footer{
+    background-color: #96811D;
+}
+.buttonInscrevase{
+    color: #FFFFFF;
+    background-color: #96811D;
+}
+.tituloLivro autoria{
+    color: #06171F;
+    font-size: 18px;
+}
+.dropdown-item{
+    color: #ffffff;
+}
+
+/*NEW*/
+
+#container-header{
+    background-color: #A9C4BB;
+    font-family:  cabin negrito;
+    width: 100%;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
+    color:#FFFFFF; !important;
+}
+.navbar-nav .nav-link.active:hover {
+    background-color: #A9C4BB;
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}
+@media (max-width: 767px) {
+    margin: 50px 10%;
+}
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#apresentacao p{
+    color: black;
+    margin-bottom: 20px;
+}
+
+a {
+    color:#F9B233;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E87600; /* Dark orange color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* Estilo para ajustar o tamanho das imagens e centralizá-las */
+.carousel-inner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.carousel-item img {
+    max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+#container-car{
+    height: 299px;
+    margin-bottom: 352px;
+}
+@media (max-width: 767px) {
+    #imgBanner1{
+        height: 250px;
+        width:100%;
+    }
+    #container-car{
+        height: 249px;
+        margin-bottom: -48px!important;
+    }
+}
+.container-footer1{
+    position: relative;
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+.icons i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+@media (max-width: 767.98px) {
+
+    .icons i {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+
+    .container img {
+        width: 90px; /* Ajuste conforme necessário para telas menores */
+    }
+}
+.container-contatos{
+    position: relative;
+    text-align: left;
+    margin: 10px 215px;
+}
+.container-footer2{
+    position: relative;
+    text-align: left;
+    margin: 10px 215px;
+}
+@media (max-width: 767.98px) {
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+
+    .navbar-brand img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .buttonInscrevase {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767.98px) {
+    .container-contatos {
+        position: static;
+        float: none;
+        margin: 0 10px
+    }
+    .container-footer2{
+        position: static;
+        float: none;
+        margin: 0 10px;
+    }
+    footer .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .buttonInscrevase {
+        width: 100%; /* O botão ocupará toda a largura disponível */
+        margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
+    }
+}
+/* index */
+@media (max-width: 767px) {
+    .footer-logo{
+        margin-left: 50px;
+    }
+    .box-img-multiplas{
+        top: 0px !important;
+    }
+}
+.box-img-multiplas{
+    position: relative;
+    top: -90px;
+}
+#tabsmultiplas .nav-item .nav-link.active{
+    background-color:  #2d4955;
+    color: #FFFFFF !important;
+}
+.nav-item .nav-link.active:hover {
+    background-color:#A9C4BB;
+    color: #FFFFFF!important;
+}
+.nav-link{
+    color: white !important;
+    text-decoration: none;
+}
+.col-4.nav-item{
+    background-color:#A9C4BB;
+    color: white !important;
+}
+.img-circle {
+    border-radius: 50%;
+}
+#livrosHeader{
+    color:#ffffff;
+}
+#livrosFooter{
+    color:#ffffff;
+}
+#RevistaHeader{
+    color:#ffffff;
+}
+#RevistaFooter{
+    color:#ffffff;
+}
+.dropdown-item{
+    color: #ffffff;
+}
+footer{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+livrosFooter{
+    background-color: #96811D;
+    color: #FFFFFF;
+    font-family: cabin;
+}
+.dropdown-menu{
+    background-color:#A9C4BB;
+}
+.dropdown-menu.footer{
+    background-color: #96811D;
+}
+@media (max-width: 767.98px) {
+    .navbar-brand img {
+        width: 50px;
+        height: 40px;
+    }
+
+    .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar-nav .dropdown-menu {
+        position: static;
+        float: none;
+    }
+}
+.descritivo {
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+
+}
+@media (min-width: 768px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+    .descritivo {
+        color: black !important;
+        font-size: 15px !important;
+        text-align: justify;
+    }
+}
+.buttonInscrevase{
+    color: #FFFFFF;
+    background-color: #96811D;
+}
+.tituloLivro autoria{
+    color: #06171F;
+    font-size: 18px;
+
+}
+.subTitulo{
+    font-size: 18px;
+}
+.tituloLivro{
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.biografia{
+    color: #96811D;
+    font-size: 15px;
+}
+.livros{
+    font-family: cabin;
+}
+
+/*NEW*/
+
+#container-header {
+    background-color: #A9C4BB;
+    font-family: 'Cabin', sans-serif;
+}
+.navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
+    color:#FFFFFF; !important;
+}
+
+/* Style the album container */
+/* Center the content in the container */
+.container {
+    max-width: 1500px;
+    margin: 50px auto;
+}
+@media (max-width: 767px) {
+    margin: 50px 10%;
+}
+/* Style the card layout */
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+h4 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #fff;
+}
+#apresentacao p{
+    color: black;
+    margin-bottom: 20px;
+}
+
+a {
+    color:#F9B233;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #E87600; /* Dark orange color */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* Estilo para ajustar o tamanho das imagens e centralizá-las */
+.carousel-item img {
+    max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+.container-footer1{
+    position: relative;
+    text-align: center;
+    margin-top: 20px; /* Ajuste conforme necessário */
+}
+.icons i {
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+@media (max-width: 767.98px) {
+    .icons i {
+        font-size: 20px;
+        margin-left: 8px;
+    }
+}
+.container-contatos{
+    position: relative;
+    text-align: left;
+    margin: 10px 215px;
+}
+.container-footer2{
+    position: relative;
+    text-align: left;
+    margin: 10px 215px;
+}
+.box-colecao {
+    position: absolute;
+    left: 50%;
+    width: 295px;
+    top: 40px;
+    transform: translateX(-66%);
+    z-index: 2;
+}
+@media (max-width: 767.98px) {
+    .logo-ativo {
+        position: relative;
+        z-index: 1;
+        height: 60% !important;
+    }
+    .container-contatos {
+        position: static;
+        float: none;
+        margin: 0 10px
+    }
+    .container-footer2{
+        position: static;
+        float: none;
+        margin: 0 10px;
+    }
+    footer .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .box-colecao {
+        top: -20px;
+        width: 45%; !important;
+        position: absolute;
+        left: 60%;
+        transform: translateX(-66%);
+        z-index: 2;
+    }
+
+    .buttonInscrevase {
+        width: 100%; /* O botão ocupará toda a largura disponível */
+        margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
+    }
+
+}
+.logo-ativo {
+    position: relative;
+    z-index: 1;
+    height: 366px;
+}
+.edicaoNome{
+    color: #06171F;
+}
+.coletivo{
+    color: #06171F;
+}
+.container_revista{
+    font-family: cabin;
+    background-color: transparent;
+}
+
+.tituloLivro autoria{
+    color: #06171F;
+    font-size: 18px;
+}
+.tituloLivro{
+    font-size: 20px;
+}
+.hastagLivro{
+    color: #96811D;
+    font-size: 15px;
+}
+
+/*NEW*/
+
+#container-header{
+    background-color: #A9C4BB;
+    font-family:  cabin negrito;
+    width: 100%;
+}
+/* Style the album container */
+.album {
+    background-color: #ffffff;
+}
+
+.col-md-3{
+    width: 100px;
+}
+
+@media (max-width: 767px) {
+    .container, .container_revista, .container-livros {
+        margin: 50px auto;
+        width: 80%;
+
+    }
+}
+
+.container_revista, .container-livros {
+    margin: 50px 10%;
+    width: 80%;
+}
+@media (max-width: 767px) {
+    .container_revista, .container-livros {
+        margin: 50px 10%;
+        width: 80%;
+    }
+}
+
+/* Style the card layout */
+.row-cols-1,
+.row-cols-sm-2,
+.row-cols-md-3 {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+/* Add space between cards */
+.col {
+    padding: 15px;
+}
+
+/* Style the cards */
+.card {
+    width: 100%;
+    height: 430px;
+    max-width: 300px;
+    margin: 15px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+}
+
+/* Style the card body */
+.card-body {
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+/* Style the card text */
+.card-text {
+    margin-bottom: 1rem;
+}
+
+/* Style the buttons */
+.btn-group {
+    margin-right: 5px;
+}
+
+/* Style the timestamp */
+.text-muted {
+    font-size: 0.85em;
+    color: #96811D; /* Timestamp color */
+}
+
+/* Add shadow to cards on hover */
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
 @media (max-width: 768px) {
     .footer-section {
         flex: 0 0 100%;
     }
 }
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    background-size: 100%, 100%;
+    background-image: none;
+}
 
-/* Declare heights because of positioning of img element */
-.carousel .item {
-    height: 500px;
-    background-color: #777;
-}
-.carousel-inner > .item > img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 500px;
-    width: 900px;
-}
-.marketing .col-lg-4 {
-    margin-bottom: 20px;
+/* Estilo para ajustar o tamanho das imagens e centralizá-las */
+.carousel-inner {
+    display: flex;
+    align-items: center;
     text-align: center;
 }
-.marketing h2 {
-    font-weight: 400;
+
+.carousel-item {
+    text-align: center;
 }
-.marketing .col-lg-4 p {
-    margin-right: 10px;
-    margin-left: 10px;
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    background-color:#96811D;
 }
-.featurette-divider {
-    margin: 80px 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-    /* Navbar positioning foo */
-    .navbar-wrapper {
-        margin-top: 20px;
-    }
-    .navbar-wrapper .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .navbar-wrapper .navbar {
-        padding-right: 0;
-        padding-left: 0;
-        border-radius: 4px; /* The navbar becomes detached from the top, so we round the corners */
-    }
-
-    /* Bump up size of carousel content */
-    .carousel-caption p {
-        margin-bottom: 20px;
-        font-size: 21px;
-        line-height: 1.4;
-    }
-
-    .featurette-heading {
-        font-size: 50px;
+/* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
+@media (max-width: 767px) {
+    .carousel-indicators {
+        bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
     }
 }
-
-@media (min-width: 992px) {
-    .featurette-heading {
-        margin-top: 120px;
+@media (max-width: 767px) {
+    #imgBanner1{
+        height: 250px;
+        width:100%;
     }
-    /*lastest_arrivals*/
-
-    .lastest_arrivals{
-        margin-top: 100px;
-        margin-bottom: 100px;
+    #imgBanner2{
+        height: 250px;
+        width:100%;
     }
-
-    .lastest_arrivals h1{
-        font-size: 26px;
-        color:#000000;
-        font-weight: 400;
+    #imgBanner3{
+        height: 250px;
+        width:100%;
     }
+    #imgBanner4{
+        height: 250px;
+        width:100%;
+    }
+    #imgBanner5{
+        height: 250px;
+        width:100%;
+    }
+    #container-car{
+        height: 300px;
+    }
+}
+.container-footer1{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
 
-    .lastest_arrival_items .lastest-addto-cart{
+@media (max-width: 767.98px) {
+    .container img {
+        width: 90px; /* Ajuste conforme necessário para telas menores */
+    }
+}
+@media (max-width: 767.98px) {
+    .box-colecao {
+        top: -20px;
+        width: 55%; /* Ajusta a largura para dispositivos móveis */
         position: absolute;
-        z-index: 100;
-        background-color:#62ab00;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        top: 35%;
-        left: 50%;
-        -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
-        opacity: 0;
-        -webkit-transition: .8s ease;
-        -o-transition: .8s ease;
-        transition: .8s ease;
+        left: 65%;
+        transform: translateX(-66%);
+        z-index: 2;
     }
-
-    .lastest_arrival_items .lastest-addto-cart i{
-        position: absolute;
-        color: #FFFFFF;
-        top: 50%;
-        left: 50%;
-        -webkit-transform: translate(-50%,-50%);
-        -ms-transform: translate(-50%,-50%);
-        transform: translate(-50%,-50%);
+    @media (max-width: 767px) {
+        .footer-logo{
+            margin-left: 50px;
+        }
+        .box-img-multiplas{
+            top: 0px !important;
+        }
     }
-
-    .lastest_arrivals .lastest_arrival_items.item:hover  .lastest-addto-cart{
-        opacity: 1;
-    }
-
-    .lastest_arrivals .lastest_arrival_items .card{
-        border: none;
-        cursor: pointer;
-    }
-
-    .lastest_arrivals .lastest_arrival_items .card img{
-        width: 100%;
-        height: 100%;
-    }
-
-    .lastest_arrivals .lastest_arrival_items .card .product-type{
-        position: absolute;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        color: white;
-        background-color: #f7941d;
-        top: 10px;
-        left: 5px;
-        border-radius: 50px;
-        font-size: 11px;
-        font-weight: bold;
-    }
-
-    .lastest_arrivals .lastest_arrival_items .card .image-holder{
-        overflow: hidden;
-        cursor: pointer;
+    .box-img-multiplas{
         position: relative;
+        top: -90px;
     }
-
-    .lastest_arrivals .lastest_arrival_items .card .image-holder img{
-        -webkit-transition: 1s ease;
-        -o-transition: 1s ease;
-        transition: 1s ease;
+    .col-4.nav-item{
+        background-color:#A9C4BB;
+        color: white !important;
     }
+    @media (max-width: 767.98px) {
+        .navbar-brand img {
+            width: 50px;
+            height: 40px;
+        }
 
-    .lastest_arrivals .lastest_arrival_items .card:hover .image-holder img{
-        -ms-transform: scale(1.1); /* IE 9 */
-        -webkit-transform: scale(1.1); /* Safari 3-8 */
-        transform: scale(1.1);
+        .navbar-nav .nav-item {
+            text-align: center;
+        }
+
+        .navbar-nav .dropdown-menu {
+            position: static;
+            float: none;
+        }
     }
-
-    .lastest_arrivals .lastest_arrival_items .card .card-body{
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-
-    .lastest_arrivals .lastest_arrival_items .card .card-body h5{
+    .descritivo {
         color: black;
         font-size: 15px;
-        display: inline-block;
-        font-family: 'Poppins', sans-serif;
-        -webkit-transition: .8s ease;
-        -o-transition: .8s ease;
-        transition: .8s ease;
-        margin-bottom: 5px;
+        text-align: justify;
+
     }
-    .lastest_arrivals .lastest_arrival_items .card .card-body p{
-        color:#000000;
-        font-size: 14px;
-        display: inline-block;
-        font-family: 'Poppins', sans-serif;
-        -webkit-transition: .8s ease;
-        -o-transition: .8s ease;
-        transition: .8s ease;
+    @media (min-width: 768px) {
+        .navbar-nav {
+            margin-left: auto;
+        }
+        .descritivo {
+            color: black !important;
+            font-size: 15px !important;
+            text-align: justify;
+        }
+    }
+    .subTitulo{
+        font-size: 18px;
+    }
+    .header-icon {
+        width: 40px;
+        margin-right: 8px;
+    }
+    .tituloLivro{
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .biografia{
+        color: #96811D;
+        font-size: 15px;
+    }
+    .livros{
+        font-family: cabin;
+    }
+    .dropdown-item{
+        color: #ffffff;
     }
 
-    .lastest_arrivals .lastest_arrival_items .card:hover .card-body h5 {
-        color: #f7941d !important;
+    /*NEW*/
+
+    #container-header {
+        background-color: #A9C4BB;
+        font-family: 'Cabin', sans-serif;
+    }
+    .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
+        color:#FFFFFF; !important;
     }
 
-    .lastest_arrivals .lastest_arrival_items .card:hover .card-body p{
-        color:#000000;
+    /* Style the album container */
+    /* Center the content in the container */
+    .container {
+        max-width: 1500px;
+        margin: 50px auto;
+    }
+    @media (max-width: 767px) {
+        margin: 50px 10%;
+    }
+    /* Style the card layout */
+    body{
+        margin: 0;
+        overflow-x: hidden;
+    }
+    h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #fff;
+    }
+    #apresentacao p{
+        color: black;
+        margin-bottom: 20px;
     }
 
-    .lastest_arrivals .owl-dots{
+    a {
+        color:#F9B233;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #E87600; /* Dark orange color */
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin-bottom: 10px;
+    }
+    /* Estilo para ajustar o tamanho das imagens e centralizá-las */
+    .container-footer1{
+        position: relative;
+        text-align: center;
+        margin-top: 20px; /* Ajuste conforme necessário */
+    }
+    .icons i {
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    @media (max-width: 767.98px) {
+        .icons i {
+            font-size: 20px;
+            margin-left: 8px;
+        }
+    }
+    .container-contatos{
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+    .container-footer2{
+        position: relative;
+        text-align: left;
+        margin: 10px 215px;
+    }
+    .box-colecao {
         position: absolute;
-        right: 0px;
-        top: -40px;
+        left: 50%;
+        width: 295px;
+        top: 40px;
+        transform: translateX(-66%);
+        z-index: 2;
     }
+    @media (max-width: 767.98px) {
+        .logo-ativo {
+            position: relative;
+            z-index: 1;
+            height: 60% !important;
+        }
+        .container-contatos {
+            position: static;
+            float: none;
+            margin: 0 10px
+        }
+        .container-footer2{
+            position: static;
+            float: none;
+            margin: 0 10px;
+        }
+        footer .navbar-nav {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+        .box-colecao {
+            top: -20px;
+            width: 45%; !important;
+            position: absolute;
+            left: 60%;
+            transform: translateX(-66%);
+            z-index: 2;
+        }
 
-    .lastest_arrivals  .lastest_featured_products  .owl-nav button.owl-next, .lastest_arrivals  .lastest_featured_products  .owl-nav button.owl-prev, .lastest_arrivals  .lastest_featured_products  button.owl-dot {
-        height: 12px;
-        width: 12px;
-        border-radius: 50px;
-        background-color: #d3d3d3;
-        margin-left: 8px;
+        .buttonInscrevase {
+            width: 100%; /* O botão ocupará toda a largura disponível */
+            margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
+        }
+
     }
+    .logo-ativo {
+        position: relative;
+        z-index: 1;
+        height: 366px;
 
-    .lastest_arrivals .lastest_featured_products .owl-dots .owl-dot.active{
-        background-color: #f7941d;
     }
 }
-
