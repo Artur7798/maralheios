@@ -1,3 +1,36 @@
+/* COMECO REvista */
+@media (max-width: 767.98px) {
+    .logo-ativo-adesfrutada {
+        position: relative;
+        z-index: 1;
+        height: 60% !important;
+    }
+    .box-adesfrutada {
+        top: 1px!important;
+        width: 200px!important;
+        position: absolute!important;
+        left: 70% !important;
+        transform: translateX(-66%) !important;
+        z-index: 2!important;
+    }
+}
+.box-adesfrutada {
+    position: absolute;
+    left: 82%;
+    width: 420px;
+    top: 42px;
+    transform: translateX(-66%);
+    z-index: 2;
+}
+.logo-ativo-adesfrutada {
+    position: relative;
+    z-index: 1;
+    height: 366px;
+
+}
+
+/* FINAL Revista */
+
 /* COMECO EM nos */
 @media (max-width: 767.98px) {
     .logo-ativo-emnos {
@@ -161,7 +194,6 @@
 }
 .livros{
     font-family: cabin;
-    width: 155px;
 }
 .text-resumo{
     text-align: justify;
@@ -204,7 +236,8 @@
 /* FINAL REVISTA */
 /* COMECO sobre */
 body{
-    overflow-x: hidden;
+    overflow-x: hidden;!important;
+    font-family: 'Cabin', sans-serif;!important;
 }
 .value-item {
     display: flex;
@@ -370,13 +403,6 @@ livrosFooter{
     color: #ffffff;
 }
 
-/*NEW*/
-
-#container-header{
-    background-color: #A9C4BB;
-    font-family:  cabin negrito;
-    width: 100%;
-}
 .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
     color:#FFFFFF; !important;
 }
@@ -509,6 +535,9 @@ li {
 /* FINAL antologias */
 
 /* COMECO index */
+.text-center{
+    text-align: center;!important;
+}
 @media (max-width: 767px) {
     .footer-logo{
         margin-left: 50px;
@@ -624,16 +653,6 @@ livrosFooter{
 .biografia{
     color: #96811D;
     font-size: 15px;
-}
-.livros{
-    font-family: cabin;
-}
-
-/*NEW*/
-
-#container-header {
-    background-color: #A9C4BB;
-    font-family: 'Cabin', sans-serif;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
     color:#FFFFFF; !important;
@@ -760,6 +779,7 @@ li {
 }
 .edicaoNome{
     color: #06171F;
+    font-weight: bold;
 }
 .coletivo{
     color: #06171F;
@@ -781,13 +801,6 @@ li {
     font-size: 15px;
 }
 
-/*NEW*/
-
-#container-header{
-    background-color: #A9C4BB;
-    font-family:  cabin negrito;
-    width: 100%;
-}
 /* Style the album container */
 .album {
     background-color: #ffffff;
@@ -1029,18 +1042,8 @@ li {
         color: #96811D;
         font-size: 15px;
     }
-    .livros{
-        font-family: cabin;
-    }
     .dropdown-item{
         color: #ffffff;
-    }
-
-    /*NEW*/
-
-    #container-header {
-        background-color: #A9C4BB;
-        font-family: 'Cabin', sans-serif;
     }
     .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
         color:#FFFFFF; !important;
