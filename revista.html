@@ -19,289 +19,7 @@
     <link rel="icon" href="img/03- ÍCONE DE PERFIL.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <style>
-        .hastagLivro{
-            color: #96811D;
-            font-size: 15px;
-        }
-        @media (max-width: 767px) {
-            .footer-logo{
-                margin-left: 50px;
-            }
-        }
-        #tabsmultiplas .nav-item .nav-link.active{
-            background-color:  #1b1e21;
-            color: #FFFFFF !important;
-        }
-        .nav-item .nav-link.active:hover {
-            background-color:#A9C4BB;
-            color: #FFFFFF!important;
-        }
-        .nav-link{
-            color: white !important;
-            text-decoration: none;
-        }
-        @media (max-width: 767.98px) {
-            .navbar-brand img {
-                width: 50px;
-                height: 40px;
-            }
-
-            .navbar-nav .nav-item {
-                text-align: center;
-            }
-
-            .navbar-nav .dropdown-menu {
-                position: static;
-                float: none;
-            }
-        }
-        .comprarAmazon{
-            color: #FFFFFF;
-            background-color: #96811D;
-        }
-        .comprarImpresso{
-            color: #FFFFFF;
-            background-color: #96811D;
-        }
-        #tabsmultiplas .nav-item .nav-link.active{
-            background-color:  #1b1e21;
-            color: #FFFFFF !important;
-        }
-        .nav-item .nav-link.active:hover {
-            background-color:#A9C4BB;
-            color: #FFFFFF!important;
-        }
-        .nav-link{
-            color: white !important;
-            text-decoration: none;
-        }
-        .col-4.nav-item{
-            background-color:#A9C4BB;
-            color: white !important;
-        }
-        .img-circle {
-            border-radius: 50%;
-        }
-        #livrosHeader{
-            color:#ffffff;
-        }
-        #livrosFooter{
-            color:#ffffff;
-        }
-        #RevistaHeader{
-            color:#ffffff;
-        }
-        #RevistaFooter{
-            color:#ffffff;
-        }
-        .dropdown-item{
-            color: #ffffff;
-        }
-        footer{
-            background-color: #96811D;
-            color: #FFFFFF;
-            font-family: cabin;
-            overflow-x: hidden;
-            overflow-y: hidden;
-        }
-        livrosFooter{
-            background-color: #96811D;
-            color: #FFFFFF;
-            font-family: cabin;
-        }
-        .dropdown-menu{
-            background-color:#A9C4BB;
-        }
-        .dropdown-menu.footer{
-            background-color: #96811D;
-        }
-        .buttonInscrevase{
-            color: #FFFFFF;
-            background-color: #96811D;
-        }
-        .tituloLivro autoria{
-            color: #06171F;
-            font-size: 18px;
-        }
-        .tituloLivro{
-            font-size: 20px;
-        }
-        .biografia{
-            color: #96811D;
-            font-size: 15px;
-        }
-        .descritivo{
-            color: #96811D;
-            font-size: 15px;
-        }
-        .livros{
-            font-family: cabin;
-        }
-        .dropdown-item{
-            color: #ffffff;
-        }
-
-        /*NEW*/
-
-        #container-header{
-            background-color: #A9C4BB;
-            font-family:  cabin negrito;
-            width: 100%;
-        }
-        .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
-            color:#FFFFFF; !important;
-        }
-
-        /* Style the album container */
-        /* Center the content in the container */
-        .container {
-            max-width: 1500px;
-            margin: 50px auto;
-        }
-        @media (max-width: 767px) {
-            margin: 50px 10%;
-        }
-        /* Style the card layout */
-        body{
-            margin: 0;
-            overflow-x: hidden;
-        }
-        h4 {
-            font-size: 24px;
-            margin-bottom: 15px;
-            color: #fff;
-        }
-        #apresentacao p{
-            color: black;
-            margin-bottom: 20px;
-        }
-
-        a {
-            color:#F9B233;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #E87600; /* Dark orange color */
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        @media (max-width: 768px) {
-            .footer-section {
-                flex: 0 0 100%;
-            }
-        }
-        /* Estilo para ajustar o tamanho das imagens e centralizá-las */
-        .carousel-item img {
-            max-height: 580px; /* Ajuste conforme necessário para a altura desejada */
-            margin: 0 auto; /* Centraliza horizontalmente */
-        }
-        /* Media query para dispositivos com largura de tela menor que 768 pixels (ajuste conforme necessário) */
-        @media (max-width: 767px) {
-            .carousel-indicators {
-                bottom: -40px; /* Ajuste o valor conforme necessário para dispositivos móveis */
-            }
-        }
-        @media (max-width: 767px) {
-            .card{
-                width:265px;
-                height: 500px;
-
-            }
-        }
-        .container-footer1{
-            position: relative;
-            text-align: center;
-            margin-top: 20px; /* Ajuste conforme necessário */
-        }
-        .icons i {
-            font-size: 24px;
-            margin-left: 10px;
-        }
-
-        @media (max-width: 767.98px) {
-
-            .icons i {
-                font-size: 20px;
-                margin-left: 8px;
-            }
-
-            .container img {
-                width: 295px; /* Ajuste conforme necessário para telas menores */
-            }
-        }
-        .container-contatos{
-            position: relative;
-            text-align: left;
-            margin: 10px 215px;
-        }
-        .container-footer2{
-            position: relative;
-            text-align: left;
-            margin: 10px 215px;
-        }
-        @media (max-width: 767.98px) {
-            .container-contatos {
-                position: static;
-                float: none;
-                margin: 0 10px
-            }
-            .container-footer2{
-                position: static;
-                float: none;
-                margin: 0 10px;
-            }
-            footer .navbar-nav {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-end;
-            }
-            .box-colecao {
-                top: -20px;
-                width: 55%; /* Ajusta a largura para dispositivos móveis */
-                position: absolute;
-                left: 65%;
-                transform: translateX(-66%);
-                z-index: 2;
-            }
-
-            .buttonInscrevase {
-                width: 100%; /* O botão ocupará toda a largura disponível */
-                margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
-            }
-            .logo-ativo{
-                position: sticky !important;
-                width: 300px!important;
-                margin-left: 90px!important;
-            }
-            .logoAdesfrutada{
-                width: 355px !important;
-                margin-top:-68px!important;
-                margin-left: -5px!important;
-            }
-        }
-        .logo-ativo{
-            width: 300px;
-            position: sticky;
-            margin-left: 200px;
-        }
-        .logoAdesfrutada{
-            margin-top:-98px;
-            margin-left: -107px;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/Home.css">
 </head>
 <body>
 
@@ -372,7 +90,7 @@
                                 <h3 class="col-md-8 fs-4 fw-bold col-md-4">A desFrutada é uma revista virtual que se propõe a publicar textos e obras visuais de diferentes autorias, com teor pró direitos humanos e diversidade. Como o nome já indica, tem a intenção de elencar quem foi chamada, em algum momento de "desfrutada", em especial, mulheres cis e trans, pessoas LGBTQIAP+, pessoas negras, pessoas com deficiência e todas que se identifiquem com o termo e que pretendam frutificar.</h3>
                             </div>
                             <div class="col-md-4 row">
-                                <img  class="logo-ativo" src="img/Ativo%2025@10x.png"><br>
+                                <img  class="logo-ativo-revista" src="img/Ativo%2025@10x.png"><br>
                                 <img  class="logoAdesfrutada" src="img/LOGO_adesfrutada.png">
                             </div>
                         </div>
@@ -385,44 +103,62 @@
                             </div>
                             <div class="row justify-content-center text-center">
                                 <div class="col-md-2 p-3 me-4">
+                                    <a href="antologiaadesfrutada.html">
                                     <img style="width: 198px;" src="img/a%20DESFRUTADA%20ANTOLOGIA.png">
+                                    </a>
                                     <div class="justify-content-between align-items-center text-center">
                                         <div class="revista mt-2">
                                             <span class="edicaoNome">Antologia A desFrutada</span><br>
                                             <span class="coletivo">Org. Ju lopse e Mandi Moreira</span><br>
                                             <h4 class="hastagLivro">#desFrutada #antologia</h4>
+                                            <a href="https://a.co/d/6EuXvJu ">
                                             <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                            </a>
+                                            <a href="#">
                                             <button class="comprarImpresso mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR<br>IMPRESSO</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2 p-3 me-4">
+                                    <a href="adesfrutada-ed03.html">
                                     <img style="width: 210px;" src="img/Adesfrutadan3_capa.png">
+                                    </a>
                                     <div class="justify-content-between align-items-center text-center">
                                         <div class="revista mt-2">
                                             <span class="edicaoNome">Edição #03</span><br>
                                             <span class="coletivo">Part. Coletivo Mulheres do Ler</span><br>
+                                            <a href="#">
                                             <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2 p-3 me-4">
+                                    <a href="adesfrutada-ed02.html">
                                     <img style="width: 210px;" src="img/Adesfrutadan2_capa.png">
+                                    </a>
                                     <div class="justify-content-between align-items-center text-center">
                                         <div class="revista">
                                             <span class="edicaoNome">Edição #02</span><br>
                                             <span class="coletivo">Part. Coletivo ArteÁtipica</span><br>
+                                            <a href="https://a.co/d/9Od8SxG">
                                             <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-2 p-3 me-4">
+                                    <a href="adesfrutada-ed01.html">
                                     <img style="width: 210px;" src="img/Adesfrutadan1_capa.png">
+                                    </a>
                                     <div class="justify-content-between align-items-center text-center">
                                         <div class="revista">
                                             <span class="edicaoNome">Edição #01</span><br>
                                             <span class="coletivo">Part. Coletivo EscreViventes</span><br>
+                                            <a href="https://a.co/d/6bGAEo5">
                                             <button class="comprarAmazon mt-2" style="border: none; border-radius: 30px;width: 150px;">COMPRAR NA<br> AMAZON</button>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
@@ -454,7 +190,7 @@
             </div>
             <div class="col-5 col-md-4 col-sm-2">
                 <div class="icons">
-                    <a href="instagram.com/maralheios " target="_blank">
+                    <a href="https://www.instagram.com/maralheios/ " target="_blank">
                         <img class="img-circle" src="img/Ícone%20%20Insta.png" alt="A desFrutada" height="30">
                     </a>
                     <a href="https://wa.me/c/555192644313 " target="_blank">
