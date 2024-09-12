@@ -429,13 +429,12 @@ h4 {
 }
 
 a {
-    color:#F9B233;
+    color: white;!important;
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #E87600; /* Dark orange color */
+    color: white;!important;
 }
 
 ul {
@@ -446,6 +445,7 @@ ul {
 
 li {
     margin-bottom: 10px;
+    text-align: justify;
 }
 /* Estilo para ajustar o tamanho das imagens e centralizá-las */
 .carousel-inner {
@@ -681,13 +681,7 @@ h4 {
 }
 
 a {
-    color:#F9B233;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: #E87600; /* Dark orange color */
+    text-decoration: none;!important;
 }
 
 ul {
@@ -1067,19 +1061,9 @@ li {
         margin-bottom: 15px;
         color: #fff;
     }
-    #apresentacao p{
+    #apresentacao p {
         color: black;
         margin-bottom: 20px;
-    }
-
-    a {
-        color:#F9B233;
-        text-decoration: none;
-        transition: color 0.3s ease;
-    }
-
-    a:hover {
-        color: #E87600; /* Dark orange color */
     }
 
     ul {
@@ -1164,3 +1148,10 @@ li {
     }
 }
 /* FINAL index */
+
+/* COMECO PRIVACIDADE */
+a{
+    text-decoration: none;
+}
+
+/* FINAL PRIVACIDADE */
