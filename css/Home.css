@@ -149,10 +149,10 @@
         justify-content: flex-end;
     }
     .box-poliamar {
-        top: 25px!important;
+        top: -60px!important;
         width: 227px!important;
         position: absolute!important;
-        left: 80% !important;
+        left: 68% !important;
         transform: translateX(-66%) !important;
         z-index: 2!important;
     }
@@ -163,9 +163,9 @@
 }
 .box-poliamar {
     position: absolute;
-    left: 76%;
+    left: 68%;
     width: 475px;
-    top: 69px;
+    top: -45px;
     transform: translateX(-66%);
     z-index: 2;
 }
@@ -191,6 +191,7 @@
 .biografia{
     color: #96811D;
     font-size: 15px;
+    text-align: justify;
 }
 .livros{
     font-family: cabin;
@@ -458,11 +459,11 @@ li {
 }
 #container-car{
     height: 299px;
-    margin-bottom: 352px;
+    margin-bottom: 254px;
 }
 #container-car-poesias{
     height: 428px;
-    margin-bottom: 352px;
+    margin-bottom: 237px;
 }
 .container-footer1{
     position: relative;
@@ -653,6 +654,7 @@ livrosFooter{
 .biografia{
     color: #96811D;
     font-size: 15px;
+    text-align: justify;
 }
 .navbar-nav .nav-link.active, .navbar-nav .nav-link .nav-link dropdown-toggle{
     color:#FFFFFF; !important;
@@ -775,7 +777,7 @@ li {
 .logo-ativo {
     position: relative;
     z-index: 1;
-    height: 366px;
+    height: 310px;
 }
 .edicaoNome{
     color: #06171F;
@@ -1041,6 +1043,7 @@ li {
     .biografia{
         color: #96811D;
         font-size: 15px;
+        text-align: justify;
     }
     .dropdown-item{
         color: #ffffff;
@@ -1157,12 +1160,6 @@ li {
             width: 100%; /* O botão ocupará toda a largura disponível */
             margin-top: 10px; /* Diminui o espaçamento superior para dispositivos móveis */
         }
-
-    }
-    .logo-ativo {
-        position: relative;
-        z-index: 1;
-        height: 366px;
 
     }
 }
