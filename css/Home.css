@@ -53,7 +53,7 @@
         height: 60% !important;
     }
     .box-emnos {
-        top: -59px;
+        top: -33px;
         width: 200px!important;
         position: absolute!important;
         left: 70% !important;
@@ -236,6 +236,39 @@
 
 /* FINAL REVISTA */
 /* COMECO sobre */
+.bio-text {
+    color: #96811D;
+    font-size: 15px;
+    display: none;
+    transform: translateX(-100%);
+}
+.bio-button{
+    background-color: #96811D;
+    border: none;
+    color: white;
+}
+.bio-text.show {
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+.biografia {
+    color: #96811D;
+    font-size: 15px;
+    display: none;
+    transform: translateX(-100%);
+}
+.bio-button{
+    background-color: #96811D;
+    border: none;
+    color: white;
+}
+.biografia.show {
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.5s ease;
+}
+
 body{
     overflow-x: hidden;!important;
     font-family: 'Cabin', sans-serif;!important;
@@ -260,8 +293,9 @@ body{
 }
 #container-header{
     background-color: #A9C4BB;
-    font-family:  cabin negrito;
+    font-family:  cabin negrito;!important;
     width: 100%;
+    height: 52px;
 }
 .header-icon {
     width: 40px;
@@ -287,6 +321,12 @@ body{
     height: 55%;
 }
 @media (max-width: 767px) {
+    #container-header{
+        background-color: #A9C4BB;
+        font-family:  cabin negrito;!important;
+        width: 100%;
+        height: auto;!important;
+    }
     .imgmandiJU {
         position: absolute;
         border-radius: 50%;
@@ -322,17 +362,15 @@ body{
 
 /* COMECO antologias */
 @media (max-width: 767px) {
-    #imgBanner1{
+    #imgBanner1, #imgBanner2, #imgBanner3, #imgBanner4, #imgBanner5 {
         height: 250px;
-        width:100%;
+        width: 100%;
     }
     #container-car{
-        height: 249px!important;
-        margin-bottom: -48px!important;
+        margin-bottom: -98px!important;
     }
     #container-car-poesias{
-        height: 249px!important;
-        margin-bottom: -48px!important;
+        margin-bottom: -226px!important;
     }
     .container_form{
      width: 405px!important;
@@ -492,6 +530,10 @@ li {
     text-align: left;
     margin: 10px 215px;
 }
+.navbar-brand img {
+    width: 135px;
+    height: 50px;
+}
 @media (max-width: 767.98px) {
     .navbar-nav .nav-item {
         text-align: center;
@@ -503,7 +545,7 @@ li {
     }
 
     .navbar-brand img {
-        width: 50px;
+        width: 125px;
         height: 40px;
     }
 
@@ -536,6 +578,18 @@ li {
 /* FINAL antologias */
 
 /* COMECO index */
+.mobile-carousel {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .mobile-carousel {
+        display: block;
+    }
+    .container-livros{
+        display: none;
+    }
+}
 .text-center{
     text-align: center;!important;
 }
@@ -604,11 +658,6 @@ livrosFooter{
     background-color: #96811D;
 }
 @media (max-width: 767.98px) {
-    .navbar-brand img {
-        width: 50px;
-        height: 40px;
-    }
-
     .navbar-nav .nav-item {
         text-align: center;
     }
@@ -665,9 +714,6 @@ livrosFooter{
 .container {
     max-width: 1500px;
     margin: 50px auto;
-}
-@media (max-width: 767px) {
-    margin: 50px 10%;
 }
 /* Style the card layout */
 h4 {
@@ -773,6 +819,11 @@ li {
     z-index: 1;
     height: 310px;
 }
+.logo-ativo-sobre {
+    position: relative;
+    z-index: 1;
+    height: 230px;
+}
 .edicaoNome{
     color: #06171F;
     font-weight: bold;
@@ -806,20 +857,12 @@ li {
     width: 100px;
 }
 
-@media (max-width: 767px) {
-    .container, .container_revista, .container-livros {
-        margin: 50px auto;
-        width: 80%;
-
-    }
-}
-
-.container_revista, .container-livros {
+.container_revista, .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
     margin: 50px 10%;
     width: 80%;
 }
 @media (max-width: 767px) {
-    .container_revista, .container-livros {
+    .container_revista, .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
         margin: 50px 10%;
         width: 80%;
     }
@@ -900,10 +943,10 @@ li {
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-    height: 100px;
-    width: 100px;
-    background-size: 100%, 100%;
-    background-image: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo das setas */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
 
 /* Estilo para ajustar o tamanho das imagens e centralizá-las */
@@ -993,11 +1036,6 @@ li {
         color: white !important;
     }
     @media (max-width: 767.98px) {
-        .navbar-brand img {
-            width: 50px;
-            height: 40px;
-        }
-
         .navbar-nav .nav-item {
             text-align: center;
         }
