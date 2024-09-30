@@ -419,6 +419,92 @@
         </div>
     </div>
     </div>
+<div class="container-fluid py-5 justify-content-center col-md-12 row">
+    <ul class="col-12 nav nav-tabs" id="tabsmultiplas" role="tablist">
+        <li class="col-4">
+            <button class="btn convocatoria" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Convocatória Pequenos Formatos</button>
+        </li>
+    </ul>
+
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="row justify-content-center text-center">
+                <div class="col-md-6 p-3 me-4">
+                    <div class="offcanvas-body">
+                        <h3><strong> CONVOCATÓRIA PEQUENOS FORMATOS </strong></h3><br><br>
+                        <h5>A editora Maralheios lança uma chamada para a submissão de livros entre 40 e 60 páginas, voltado exclusivamente ao gênero conto em todos os tamanhos.<br><br>
+                            As inscrições são <strong>gratuitas</strong> e abertas a quaisquer pessoas acima dos 18 anos, com ou sem livro publicados.<br><br>
+                            Cada participante poderá inscrever até <strong>livro entre 40 e 60 páginas</strong>, <strong>no gênero conto</strong>, em qualquer extensão (conto longo, contos curtos, microcontos ou minicontos).<br><br>
+                            As inscrições estarão abertas de <strong>20 de setembro a 15 de outubro de 2024</strong> através do formulário: </h5><br><br>
+                        <h5>
+                            Deve ser anexado o livro em <strong> formato pdf, configuração de página A6, tamanho de letra 11</strong>, com fonte e formatação livres.<br><br>
+                            <strong>As obras devem ser parcialmente inéditas</strong>, com até 30% de trechos publicados em blogs ou redes sociais.<br><br>
+                            <strong>Serão selecionados até 05 livros para publicação.</strong> Cada um dos livros será ilustrado por artistas, mediante seleção da editora.<br><br>
+                        </h5><br>
+                        <h5>
+                            Cada livro será lançado em formato impresso e e-book com recurso proveniente de financiamento coletivo, sem necessidade de compra mínima, havendo possibilidade de compra de até 2 exemplares por autoria pelo valor de custo de R$30,00 (incluso frete) cada um, antes da impressão do livro.<br>
+                            Em caso de dúvidas, entre em contato através do e-mail maralheios@gmail.com ou do Instagram @maralheios<br>
+                        </h5><br><br><br>
+
+                        <h3><strong> Inscreva-se agora mesmo no formulário abaixo </strong></h3>
+                        <a style="color: black" href="#">Formulário</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<button type="button" class="btn btn-primary" id="liveToastBtn">Convocatória</button>
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <strong class="me-auto">Convocatória Pequenos Formatos</strong>
+            <small>11 mins ago</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            <div class="col-md-12 p-3 me-4">
+                <div class="offcanvas-body">
+                    <h3><strong> CONVOCATÓRIA PEQUENOS FORMATOS </strong></h3><br><br>
+                    <h5>A editora Maralheios lança uma chamada para a submissão de livros entre 40 e 60 páginas, voltado exclusivamente ao gênero conto em todos os tamanhos.<br><br>
+                        As inscrições são <strong>gratuitas</strong> e abertas a quaisquer pessoas acima dos 18 anos, com ou sem livro publicados.<br><br>
+                        Cada participante poderá inscrever até <strong>livro entre 40 e 60 páginas</strong>, <strong>no gênero conto</strong>, em qualquer extensão (conto longo, contos curtos, microcontos ou minicontos).<br><br>
+                        As inscrições estarão abertas de <strong>20 de setembro a 15 de outubro de 2024</strong> através do formulário: </h5><br><br>
+                    <h5>
+                        Deve ser anexado o livro em <strong> formato pdf, configuração de página A6, tamanho de letra 11</strong>, com fonte e formatação livres.<br><br>
+                        <strong>As obras devem ser parcialmente inéditas</strong>, com até 30% de trechos publicados em blogs ou redes sociais.<br><br>
+                        <strong>Serão selecionados até 05 livros para publicação.</strong> Cada um dos livros será ilustrado por artistas, mediante seleção da editora.<br><br>
+                    </h5><br>
+                    <h5>
+                        Cada livro será lançado em formato impresso e e-book com recurso proveniente de financiamento coletivo, sem necessidade de compra mínima, havendo possibilidade de compra de até 2 exemplares por autoria pelo valor de custo de R$30,00 (incluso frete) cada um, antes da impressão do livro.<br>
+                        Em caso de dúvidas, entre em contato através do e-mail maralheios@gmail.com ou do Instagram @maralheios<br>
+                    </h5><br><br><br>
+
+                    <h3><strong> Inscreva-se agora mesmo no formulário abaixo </strong></h3>
+                    <a style="color: black" href="#">Formulário</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('liveToastBtn').addEventListener('click', function () {
+        var toastLiveExample = document.getElementById('liveToast');
+        var toast = new bootstrap.Toast(toastLiveExample);
+        toast.show();
+    });
+</script>
+
+
+
 <!-- END PORTOLIO SECTION -->
 
 <footer>
