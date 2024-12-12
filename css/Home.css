@@ -888,12 +888,12 @@ li {
     width: 100px;
 }
 
-.container-revista, .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
+.container-revista .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
     margin: 50px 10%;
     width: 80%;
 }
 @media (max-width: 767px) {
-    .container-revista, .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
+    .container-revista .container-livros .container-livros-ebooks .container-livros-poesias .container-livros-politica {
         margin: 50px 10%;
         width: 80%;
     }
